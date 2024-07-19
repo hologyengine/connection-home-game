@@ -1,0 +1,15 @@
+{
+  "name": "water noise",
+  "path": "",
+  "type": "texture",
+  "collisionDetection": true,
+  "id": "9c900517-5d7c-4764-afbf-ef442c4e86d0",
+  "fileKey": "pattern_80.png",
+  "fileFormat": "png",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_pattern-pack\\PNG\\Default size\\pattern_80.png",
+  "texture": {
+    "flipY": true,
+    "wrapS": "repeat",
+    "wrapT": "repeat"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "wave pattern",
+  "path": "",
+  "type": "texture",
+  "collisionDetection": true,
+  "id": "9c9005fb-7642-4300-b9c6-2a834d05f6fe",
+  "fileKey": "pattern_27.png",
+  "fileFormat": "png",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_pattern-pack\\PNG\\Default size\\pattern_27.png",
+  "texture": {
+    "flipY": true,
+    "wrapS": "repeat",
+    "wrapT": "repeat"
+  }
+}
