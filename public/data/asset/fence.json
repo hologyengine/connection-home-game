@@ -1,0 +1,10 @@
+{
+  "name": "fence",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90036d-e9e6-4e61-8194-12972d0f1c65",
+  "fileKey": "fence.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\fence.glb"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "resource-wood",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900338-e0ca-4fa9-b221-43560dc8ff5b",
+  "fileKey": "resource-wood.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\resource-wood.glb"
+}

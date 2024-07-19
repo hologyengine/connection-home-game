@@ -1,0 +1,10 @@
+{
+  "name": "tool-hammer",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90034c-7d1a-40ba-a4ca-47ec7994e8d3",
+  "fileKey": "tool-hammer.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tool-hammer.glb"
+}

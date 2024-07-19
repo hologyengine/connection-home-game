@@ -1,0 +1,7 @@
+{
+  "name": "connection-home",
+  "staticPath": "public",
+  "dataPath": "public/data",
+  "shadersPath": "src/shaders",
+  "actorsPath": "src/actors"
+}

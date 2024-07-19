@@ -1,0 +1,10 @@
+{
+  "name": "chest",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90036c-5180-4a6e-9763-30e635d66fa7",
+  "fileKey": "chest.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\chest.glb"
+}

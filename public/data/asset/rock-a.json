@@ -1,0 +1,10 @@
+{
+  "name": "rock-a",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900339-39bc-4b41-886e-d8d4cbe6b6c7",
+  "fileKey": "rock-a.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-a.glb"
+}

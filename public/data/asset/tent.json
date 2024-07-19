@@ -1,0 +1,10 @@
+{
+  "name": "tent",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900348-409c-449b-b567-5e1df154a93f",
+  "fileKey": "tent.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tent.glb"
+}

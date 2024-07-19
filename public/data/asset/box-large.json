@@ -1,0 +1,10 @@
+{
+  "name": "box-large",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900365-a5f6-48bd-867a-218f6e9a08cf",
+  "fileKey": "box-large.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\box-large.glb"
+}

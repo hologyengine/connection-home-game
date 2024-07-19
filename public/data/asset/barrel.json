@@ -1,0 +1,10 @@
+{
+  "name": "barrel",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90035d-4244-49b5-bacf-bcb6b4bdcb4f",
+  "fileKey": "barrel.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\barrel.glb"
+}

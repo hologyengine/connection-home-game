@@ -1,0 +1,10 @@
+{
+  "name": "fish",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900370-e268-4437-a84c-905f7f4e94e8",
+  "fileKey": "fish.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\fish.glb"
+}

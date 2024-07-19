@@ -1,0 +1,10 @@
+{
+  "name": "floor",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900372-ea68-4dea-92e5-a1bac8a07e40",
+  "fileKey": "floor.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\floor.glb"
+}

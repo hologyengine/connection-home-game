@@ -1,0 +1,10 @@
+{
+  "name": "bottle",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900362-16fc-4ee0-8816-fdab1e89b7a1",
+  "fileKey": "bottle.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\bottle.glb"
+}

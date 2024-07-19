@@ -1,0 +1,10 @@
+{
+  "name": "tool-pickaxe",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90034f-ef36-4ec2-842c-9e46c80877f1",
+  "fileKey": "tool-pickaxe.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tool-pickaxe.glb"
+}

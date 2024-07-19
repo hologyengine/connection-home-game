@@ -1,0 +1,120 @@
+{
+  "id": "uuvu76i94",
+  "name": "demo",
+  "sceneId": "uuvu76i94",
+  "data": [
+    {
+      "id": "auto-sky",
+      "name": "Sky",
+      "type": "sky",
+      "sky": {
+        "materialId": null
+      }
+    },
+    {
+      "id": "auto-global-fog",
+      "name": "Global fog",
+      "type": "global_fog",
+      "fog": {
+        "type": "density",
+        "color": "#b8f8ff",
+        "density": 0.005,
+        "near": 100,
+        "far": 1000
+      }
+    },
+    {
+      "id": "ae8140c5-424c-49a7-b2d5-867f90c383b6",
+      "name": "rock-flat",
+      "assetId": "9c90033a-8074-4d39-b73d-e9ff3a6dbd14",
+      "position": [
+        -92.75402695642592,
+        5.2772130594231666e-14,
+        -237.66454767972888
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "8feae467-5fd0-45aa-8cde-379ebb1d89a2",
+      "name": "rock-sand-a",
+      "assetId": "9c90033b-8d3e-4e4e-a0df-54bcd261dd8b",
+      "position": [
+        -93.08121306729367,
+        0.16499999165540227,
+        -237.79329736855533
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "6d2a3129-b924-409d-9176-68a2c44f9016",
+      "name": "character-human",
+      "assetId": "9c900411-f946-449f-a3cb-25186de7f3ab",
+      "position": [
+        -92.41208075310468,
+        5.2306099382013866e-14,
+        -236.56572968604178
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    }
+  ]
+}

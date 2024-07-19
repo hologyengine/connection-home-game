@@ -1,0 +1,10 @@
+{
+  "name": "floor-hole",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900373-e602-4575-9009-b49e83a959f2",
+  "fileKey": "floor-hole.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\floor-hole.glb"
+}

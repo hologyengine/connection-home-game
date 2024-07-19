@@ -1,0 +1,10 @@
+{
+  "name": "bucket",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900368-7e7a-4a32-887f-3212fe47876a",
+  "fileKey": "bucket.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\bucket.glb"
+}

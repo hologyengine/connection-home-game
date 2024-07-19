@@ -1,0 +1,10 @@
+{
+  "name": "patch-grass",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90037d-7cf8-4468-a195-3202af421e0a",
+  "fileKey": "patch-grass.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\patch-grass.glb"
+}

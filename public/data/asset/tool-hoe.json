@@ -1,0 +1,10 @@
+{
+  "name": "tool-hoe",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90034e-432a-4f8e-94ba-ba39986ef752",
+  "fileKey": "tool-hoe.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tool-hoe.glb"
+}

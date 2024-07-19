@@ -1,0 +1,10 @@
+{
+  "name": "tree",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c900353-5946-4913-9e58-951546a6dea1",
+  "fileKey": "tree.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tree.glb"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "tool-axe",
+  "path": "",
+  "type": "mesh",
+  "collisionDetection": true,
+  "id": "9c90034a-db2c-4f3c-8837-af44784a9bbc",
+  "fileKey": "tool-axe.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\tool-axe.glb"
+}
