@@ -1,9 +1,13 @@
 
 import { Actor, AnimationState, AnimationStateMachine, AssetLoader, BaseActor, attach, inject } from "@hology/core/gameplay";
 import { CharacterAnimationComponent, CharacterMovementComponent, CharacterMovementMode, ThirdPartyCameraComponent } from "@hology/core/gameplay/actors";
+import { signal } from "@preact/signals-react";
 
 @Actor()
 class Character extends BaseActor {
+  public wood = signal(0);
+
+
   private animation = attach(CharacterAnimationComponent)
   public readonly movement = attach(CharacterMovementComponent, {
     maxSpeed: 1.5,

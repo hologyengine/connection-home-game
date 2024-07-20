@@ -150,37 +150,6 @@
       }
     },
     {
-      "id": "5c337290-075d-4b41-80bb-c23adfa52b69",
-      "name": "tree-trunk",
-      "assetId": "9c900359-88fc-4818-935a-b6484bb57d8a",
-      "position": [
-        -97.99535402874031,
-        0.244718027056392,
-        -236.21974960126101
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
       "id": "992d8e32-fd97-4629-a23d-a44455489640",
       "name": "workbench-anvil",
       "assetId": "9c90035b-5b64-4158-b6b5-d84c94f32868",
@@ -398,68 +367,6 @@
       }
     },
     {
-      "id": "a7d61043-a06e-4b1e-9336-a12c4793fbac",
-      "name": "resource-planks",
-      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
-      "position": [
-        -97.29241736421275,
-        0.24471802705639156,
-        -235.10516345391324
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
-      "id": "ac31db1d-718b-45b2-b75c-aba24b9464b3",
-      "name": "resource-planks",
-      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
-      "position": [
-        -99.46999934973014,
-        0.244718027056392,
-        -237.610640225689
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
       "id": "99b1c322-e0f2-4cee-b6e6-59af4e1034ee",
       "name": "resource-planks",
       "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
@@ -565,130 +472,6 @@
         1,
         1,
         1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
-      "id": "68f2141a-7139-4ec1-a097-cdb158bb3a5d",
-      "name": "floor-old",
-      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
-      "position": [
-        -100,
-        -0.047553182587548815,
-        -231.5
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
-      "id": "23322e1c-18d0-4ffb-b533-890f5ee61205",
-      "name": "floor-old",
-      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
-      "position": [
-        -100,
-        -0.047553182587548815,
-        -230.5
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
-      "id": "855fcd16-a1bf-40de-adbf-98fba17c46e2",
-      "name": "floor-old",
-      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
-      "position": [
-        -100,
-        -0.047553182587548815,
-        -229.5
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
-      "id": "91255af6-c54a-4f53-ae28-b18d528e4f67",
-      "name": "floor-old",
-      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
-      "position": [
-        -100,
-        -0.047553182587548815,
-        -228.5
-      ],
-      "scale": [
-        2,
-        2,
-        2
       ],
       "rotation": [
         0,
@@ -1125,6 +908,110 @@
       },
       "grass": {
         "layers": []
+      }
+    },
+    {
+      "id": "da953e80-5bff-401f-ad76-a152904de722",
+      "name": "ResourceActor",
+      "position": [
+        -99.68092989062562,
+        0.244718027056392,
+        -234.87265887785728
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "ResourceActor",
+        "innerParams": [],
+        "params": {}
+      }
+    },
+    {
+      "id": "f361cccb-150a-4f1d-b21f-c1f2845df175",
+      "name": "ResourceActor",
+      "position": [
+        -98.65555654156834,
+        0.24471802705639245,
+        -235.23152850884935
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "ResourceActor",
+        "innerParams": [],
+        "params": {}
+      }
+    },
+    {
+      "id": "8639aec4-92bc-4be1-8987-4ebdf2467e1c",
+      "name": "ResourceActor",
+      "position": [
+        -99.14931273052093,
+        0.244718027056392,
+        -236.11821848060134
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "ResourceActor",
+        "innerParams": [],
+        "params": {}
+      }
+    },
+    {
+      "id": "10a108d2-25bc-42a2-87c0-016e552f83fa",
+      "name": "ResourceActor",
+      "position": [
+        -98.17744587660961,
+        0.244718027056392,
+        -237.2340637749354
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "ResourceActor",
+        "innerParams": [],
+        "params": {}
       }
     }
   ]

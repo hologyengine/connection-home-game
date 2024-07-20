@@ -1,7 +1,8 @@
 import { BoxCollisionShape, ConvexPolyhedronCollisionShape, PlaneCollisionShape } from "@hology/core";
-import { Actor, AssetLoader, BaseActor, PhysicsBodyType, PhysicsSystem, Service, World, inject } from "@hology/core/gameplay";
+import { Actor, AssetLoader, BaseActor, PhysicsBodyType, PhysicsSystem, RayTestResult, Service, World, inject } from "@hology/core/gameplay";
 import { BoxGeometry, Euler, Mesh, MeshLambertMaterial, Vector3 } from "three";
 import { Vector } from "three/examples/jsm/Addons.js";
+import Character from "../actors/character";
 
 
 @Actor()
@@ -13,66 +14,36 @@ class FloorActor extends BaseActor {
   async onInit(): Promise<void> {
 
       const { scene } = await this.assetLoader.getModelByAssetName('floor-old')
+      scene.traverse(o => o.receiveShadow = true)
+
       scene.scale.multiplyScalar(2)
       scene.translateY(0.1)
       this.object.add(scene)
 
       this.physics.showDebug = false
 
-      let mesh!: Mesh
-      scene.traverseVisible((o) => {
-        if (o instanceof Mesh) {
-          mesh = o
-        }
-      })
-
-      if (mesh == null) {
-        console.log("No mesh!!")
-      }
-
       this.physics.addActor(this, [
-        //new ConvexPolyhedronCollisionShape(mesh)
         new BoxCollisionShape(new Vector3(1, .15, 1))
-        //new PlaneCollisionShape(1,1)
-        //  .withRotation(new Euler(-Math.PI/2, 0, 0))
           .withOffset(new Vector3(0, .15, 0))
       ], {
         type: PhysicsBodyType.static,
         friction: 0.001,
         restitution: 1
       })
-
-
-
-
-
-      /*
-
-      I don't even know if I am moving in the right direciton.
-      Like I am putting a lot of effort into things lying to myself that it will be meaningful. 
-
-      Pick the thing you think best showcase the engine
-
-
-      Here need to load the asset to use. 
-
-      Set it as a parameter but I want it to happen before on init.
-
-      I don't like how I can't pass in parameters to actors.
-
-      */
+    }
   }
-}
 
 
 @Service()
 class BuildService {
   private world = inject(World)
+  private physics = inject(PhysicsSystem)
 
-  public player!: BaseActor
+  public player!: Character
 
-  setup(player: BaseActor) {
+  setup(player: Character) {
     this.player = player
+    this.physics.showDebug = true
   }
 
   private usedLocations: Vector3[] = []
@@ -80,17 +51,25 @@ class BuildService {
 
   readonly toggleBuild = (shouldBuild: boolean) => {
     if (!shouldBuild) return 
-
+  
     const buildLocation = this.getBuildLocation(this.player)
-
-    console.log(shouldBuild, this.getBuildLocation(this.player))
-
     //const mesh = new Mesh(new BoxGeometry(1,.2,1), new MeshLambertMaterial({color: 0xff00ff}))
     //mesh.position.copy(buildLocation)
     //this.world.scene.add(mesh)
 
+    if (this.player.wood.value <= 0) {
+      console.log('Not enough resources to build')
+      return
+    }
+
     if (this.usedLocations.some(l => l.equals(buildLocation))) {
       console.log("Already built on " + buildLocation)
+      return
+    }
+
+    this.physics.rayTest(new Vector3().copy(buildLocation).addScaledVector(up, 2), buildLocation, _rayTestResult)
+    if (_rayTestResult.hasHit) {
+      console.log('Can not build here')
       return
     }
 
@@ -98,6 +77,7 @@ class BuildService {
     
     this.usedLocations.push(buildLocation.clone())
 
+    this.player.wood.value--
   }
 
   getBuildLocation(builder: BaseActor) {
@@ -112,7 +92,11 @@ class BuildService {
 
 }
 
+
+const _rayTestResult = new RayTestResult()
+
 const _buildLocation = new Vector3()
 const _direction = new Vector3()
+const up = new Vector3(0,1,0)
 
 export { BuildService }
