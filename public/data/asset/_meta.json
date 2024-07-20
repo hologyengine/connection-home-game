@@ -84,6 +84,11 @@
     "name": "chest",
     "path": ""
   },
+  "9c911d54-42be-4cc7-bc1d-c72b69e900bd": {
+    "id": "9c911d54-42be-4cc7-bc1d-c72b69e900bd",
+    "name": "colormap",
+    "path": ""
+  },
   "9c90036e-f08e-4908-8c70-8196fc89a0cd": {
     "id": "9c90036e-f08e-4908-8c70-8196fc89a0cd",
     "name": "fence-doorway",
@@ -133,6 +138,10 @@
     "id": "9c900375-ee5c-47a6-b352-f7b27e6b9d1d",
     "name": "grass",
     "path": ""
+  },
+  "9c9128b3-80fc-4de2-bf8a-b9657939b14f": {
+    "id": "9c9128b3-80fc-4de2-bf8a-b9657939b14f",
+    "name": "Ice"
   },
   "9c900379-6e74-4095-869b-213c9c36475c": {
     "id": "9c900379-6e74-4095-869b-213c9c36475c",
@@ -229,6 +238,10 @@
     "name": "rock-sand-c",
     "path": ""
   },
+  "9c901688-2da2-448b-94e6-b6bafa093a6f": {
+    "id": "9c901688-2da2-448b-94e6-b6bafa093a6f",
+    "name": "Sand"
+  },
   "9c90033e-0c3a-4114-b650-50cca20da999": {
     "id": "9c90033e-0c3a-4114-b650-50cca20da999",
     "name": "signpost-single",
@@ -283,6 +296,10 @@
     "id": "9c90033e-d6ba-41df-a851-0f497ef130e6",
     "name": "structure",
     "path": ""
+  },
+  "9c911d01-b634-4856-8d80-d119d3e27eea": {
+    "id": "9c911d01-b634-4856-8d80-d119d3e27eea",
+    "name": "SurvivalMain"
   },
   "9c90034a-060c-45b5-a708-b3564097d1d0": {
     "id": "9c90034a-060c-45b5-a708-b3564097d1d0",
@@ -388,6 +405,10 @@
     "id": "9c900353-5946-4913-9e58-951546a6dea1",
     "name": "tree",
     "path": ""
+  },
+  "9c900a02-13cc-46b3-a8c4-aae0a8f74522": {
+    "id": "9c900a02-13cc-46b3-a8c4-aae0a8f74522",
+    "name": "WaterMaterial"
   },
   "9c900517-5d7c-4764-afbf-ef442c4e86d0": {
     "id": "9c900517-5d7c-4764-afbf-ef442c4e86d0",

@@ -6,5 +6,8 @@
   "id": "9c90033a-8074-4d39-b73d-e9ff3a6dbd14",
   "fileKey": "rock-flat.glb",
   "fileFormat": "glb",
-  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-flat.glb"
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-flat.glb",
+  "mesh": {},
+  "castShadow": false,
+  "receiveShadow": true
 }

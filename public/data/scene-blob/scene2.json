@@ -1,0 +1,27 @@
+{
+  "id": "9c901150-31d6-4042-a3da-ac46893f7743",
+  "name": "scene2",
+  "sceneId": "9c901150-31d6-4042-a3da-ac46893f7743",
+  "data": [
+    {
+      "id": "auto-global-fog",
+      "name": "Global fog",
+      "type": "global_fog",
+      "fog": {
+        "type": "density",
+        "color": "#b8f8ff",
+        "density": 0.005,
+        "near": 100,
+        "far": 1000
+      }
+    },
+    {
+      "id": "auto-sky",
+      "name": "Sky",
+      "type": "sky",
+      "sky": {
+        "materialId": null
+      }
+    }
+  ]
+}

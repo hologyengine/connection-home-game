@@ -12,7 +12,7 @@
   "dependencies": {
     "@babel/runtime": "^7.24.8",
     "@dimforge/rapier3d-compat": "^0.13.1",
-    "@hology/core": "^0.0.46",
+    "@hology/core": "file:../hology/packages/core/hology-core-0.0.46.tgz",
     "@hology/react": "^0.0.11",
     "@preact/signals-react": "^2.1.0",
     "@types/three": "^0.166.0",

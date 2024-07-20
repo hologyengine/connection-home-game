@@ -28,14 +28,14 @@
       "name": "rock-flat",
       "assetId": "9c90033a-8074-4d39-b73d-e9ff3a6dbd14",
       "position": [
-        -92.75402695642592,
-        5.2772130594231666e-14,
-        -237.66454767972888
+        -102.01410352460574,
+        -1.9278740756677855,
+        -237.10678500409807
       ],
       "scale": [
-        1,
-        1,
-        1
+        13.167225530909512,
+        13.167225530909512,
+        13.167225530909512
       ],
       "rotation": [
         0,
@@ -52,7 +52,9 @@
         "density": 1,
         "restitution": 0.5,
         "mass": 1
-      }
+      },
+      "receiveShadow": false,
+      "castShadow": true
     },
     {
       "id": "8feae467-5fd0-45aa-8cde-379ebb1d89a2",
@@ -90,9 +92,9 @@
       "name": "character-human",
       "assetId": "9c900411-f946-449f-a3cb-25186de7f3ab",
       "position": [
-        -92.41208075310468,
-        5.2306099382013866e-14,
-        -236.56572968604178
+        0.25401713707094586,
+        0,
+        4.66879792787114
       ],
       "scale": [
         1,
@@ -114,6 +116,1015 @@
         "density": 1,
         "restitution": 0.5,
         "mass": 1
+      }
+    },
+    {
+      "id": "dbbd384b-803e-4715-922c-cc2177d089a3",
+      "name": "tree",
+      "assetId": "9c900353-5946-4913-9e58-951546a6dea1",
+      "position": [
+        -100.1188634402186,
+        0.244718027056392,
+        -239.93477807048478
+      ],
+      "scale": [
+        1.976465530089143,
+        1.976465530089143,
+        1.976465530089143
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "5c337290-075d-4b41-80bb-c23adfa52b69",
+      "name": "tree-trunk",
+      "assetId": "9c900359-88fc-4818-935a-b6484bb57d8a",
+      "position": [
+        -97.99535402874031,
+        0.244718027056392,
+        -236.21974960126101
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "992d8e32-fd97-4629-a23d-a44455489640",
+      "name": "workbench-anvil",
+      "assetId": "9c90035b-5b64-4158-b6b5-d84c94f32868",
+      "position": [
+        -100.77585602040166,
+        0.244718027056392,
+        -237.53685804473108
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "f329214a-d671-4c5d-97f0-e32583f65195",
+      "name": "tree-autumn",
+      "assetId": "9c900354-2ba0-4ab8-acaa-f32ff32aaabd",
+      "position": [
+        -102.22929719693539,
+        0.244718027056392,
+        -238.767088544893
+      ],
+      "scale": [
+        2.5680216784529653,
+        2.5680216784529653,
+        2.5680216784529653
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "2f8d6800-174e-4983-a98e-e508ca06a353",
+      "name": "rock-sand-c",
+      "assetId": "9c90033c-b7cc-4a81-abaf-f8f8177238d9",
+      "position": [
+        -105.16876823470805,
+        -2.342760791827337,
+        -221.58637978019314
+      ],
+      "scale": [
+        15.102996648988862,
+        15.102996648988862,
+        15.102996648988862
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "4ac04371-92cd-4a4d-aec0-77d55250f881",
+      "name": "grass-large",
+      "assetId": "9c900376-f4e6-4593-b8c6-573f92e709fc",
+      "position": [
+        -102.37994108412704,
+        0.26028284219485254,
+        -237.4589144728674
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "c0d09a3f-2422-4274-bdf5-1410cdf7847a",
+      "name": "grass-large",
+      "assetId": "9c900376-f4e6-4593-b8c6-573f92e709fc",
+      "position": [
+        -103.38106750125375,
+        0.26028284219485254,
+        -237.1756699751717
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "2c9e3c52-fe33-4ad2-b220-4aabb98e79e0",
+      "name": "grass-large",
+      "assetId": "9c900376-f4e6-4593-b8c6-573f92e709fc",
+      "position": [
+        -102.73180403486408,
+        0.2602828421948528,
+        -236.13620923397846
+      ],
+      "scale": [
+        0.865860173182623,
+        0.865860173182623,
+        0.865860173182623
+      ],
+      "rotation": [
+        0,
+        1.3323938626126652,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "3f1a92c9-a5e6-40c4-abc3-a93ba5988a00",
+      "name": "grass-large",
+      "assetId": "9c900376-f4e6-4593-b8c6-573f92e709fc",
+      "position": [
+        -103.08595843793483,
+        0.26028284219485254,
+        -238.13642997504218
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "a7d61043-a06e-4b1e-9336-a12c4793fbac",
+      "name": "resource-planks",
+      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
+      "position": [
+        -97.29241736421275,
+        0.24471802705639156,
+        -235.10516345391324
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "ac31db1d-718b-45b2-b75c-aba24b9464b3",
+      "name": "resource-planks",
+      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
+      "position": [
+        -99.46999934973014,
+        0.244718027056392,
+        -237.610640225689
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "99b1c322-e0f2-4cee-b6e6-59af4e1034ee",
+      "name": "resource-planks",
+      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
+      "position": [
+        -104,
+        -0.02818546573510744,
+        -229.0191628289676
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "a46919b5-8ad7-40f5-8e27-84a1a793764b",
+      "name": "box",
+      "assetId": "9c900364-b600-4a88-952c-c2a05727d14a",
+      "position": [
+        -105.80435853154631,
+        -0.15774148450304645,
+        -227.56044241034473
+      ],
+      "scale": [
+        0.9999999999999999,
+        0.9999999999999996,
+        1
+      ],
+      "rotation": [
+        0.030896433385358805,
+        0.3787110591852757,
+        -0.16644035575452806,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "379aa3cc-c826-451c-b212-0078a80063a9",
+      "name": "barrel",
+      "assetId": "9c90035d-4244-49b5-bacf-bcb6b4bdcb4f",
+      "position": [
+        -108.27836092865292,
+        2.2203857318662573e-15,
+        -228.09359510028233
+      ],
+      "scale": [
+        1,
+        1.0000000000000002,
+        1.0000000000000002
+      ],
+      "rotation": [
+        1.5543144732023004,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "98d356b9-2e66-438f-b5b2-dd685248d9ec",
+      "name": "workbench",
+      "assetId": "9c90035a-70fa-4c64-8714-eeed82fa4bd2",
+      "position": [
+        -101.6553301754256,
+        0.244718027056392,
+        -235.58037016534382
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "68f2141a-7139-4ec1-a097-cdb158bb3a5d",
+      "name": "floor-old",
+      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
+      "position": [
+        -100,
+        -0.047553182587548815,
+        -231.5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "23322e1c-18d0-4ffb-b533-890f5ee61205",
+      "name": "floor-old",
+      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
+      "position": [
+        -100,
+        -0.047553182587548815,
+        -230.5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "855fcd16-a1bf-40de-adbf-98fba17c46e2",
+      "name": "floor-old",
+      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
+      "position": [
+        -100,
+        -0.047553182587548815,
+        -229.5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "91255af6-c54a-4f53-ae28-b18d528e4f67",
+      "name": "floor-old",
+      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
+      "position": [
+        -100,
+        -0.047553182587548815,
+        -228.5
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "f5666d1c-617c-4ae9-a8f6-36f069b63b4a",
+      "name": "rock-sand-c",
+      "assetId": "9c90033c-b7cc-4a81-abaf-f8f8177238d9",
+      "position": [
+        -100.36727925733452,
+        0.244718027056392,
+        -236.45662141320474
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "d92dc8d1-e54c-4e63-811a-143071617439",
+      "name": "signpost-single",
+      "assetId": "9c90033e-0c3a-4114-b650-50cca20da999",
+      "position": [
+        -101.8861229208637,
+        0.10279198485045482,
+        -223.73617073465888
+      ],
+      "scale": [
+        0.9999999999999999,
+        1,
+        0.9999999999999999
+      ],
+      "rotation": [
+        -3.141592653589793,
+        1.1167352914315978,
+        -3.141592653589793,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "d28789b1-e4e9-4541-8977-df042ec225d9",
+      "name": "tree-autumn",
+      "assetId": "9c900354-2ba0-4ab8-acaa-f32ff32aaabd",
+      "position": [
+        -102.48234733054987,
+        0.10279198485045482,
+        -223.2320524581669
+      ],
+      "scale": [
+        2.1821376300844597,
+        2.1821376300844597,
+        2.1821376300844597
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "d9e87c08-a038-454d-b61f-63fedc003a76",
+      "name": "resource-planks",
+      "assetId": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
+      "position": [
+        -101.45232998397807,
+        0.10279198485045482,
+        -222.8149237133566
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "d829fbd0-5b41-4ee3-88e8-b2a89cc48795",
+      "name": "tree-log-small",
+      "assetId": "9c900357-b054-4579-a438-e35258d3b5a6",
+      "position": [
+        -95.64536292379607,
+        -0.2525690099292182,
+        -228.58701963016216
+      ],
+      "scale": [
+        1.79510604853126,
+        1.79510604853126,
+        1.79510604853126
+      ],
+      "rotation": [
+        0,
+        0.45655672382346235,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "5ba349f0-a0cb-434e-a157-afcff0b85cc9",
+      "name": "patch-grass",
+      "assetId": "9c90037d-7cf8-4468-a195-3202af421e0a",
+      "position": [
+        -102.77241510509407,
+        0.26028284219485254,
+        -237.19382898604619
+      ],
+      "scale": [
+        2.608768261065303,
+        2.608768261065303,
+        2.608768261065303
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "dc6a2f52-2284-4949-818c-9f464436853e",
+      "name": "chest",
+      "assetId": "9c90036c-5180-4a6e-9763-30e635d66fa7",
+      "position": [
+        -102.76187779245308,
+        0.10279198485045482,
+        -223.67040014811593
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "7f1d4adf-546e-4e0b-8333-29ea47141cc5",
+      "name": "rock-c",
+      "assetId": "9c90033a-0d88-4be1-9e5e-e946cbe7ce51",
+      "position": [
+        -103.27329675891573,
+        0.10279198485045482,
+        -223.79918042865754
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "afff1340-8430-43de-8cb7-bdde7f7a8cd4",
+      "name": "SpawnPoint",
+      "position": [
+        -96.23002392870126,
+        0.47233037380696885,
+        -239.40868725070857
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "SpawnPoint",
+        "innerParams": [
+          {
+            "path": [
+              "mesh"
+            ],
+            "params": {}
+          }
+        ],
+        "params": {}
+      }
+    },
+    {
+      "id": "ad429afb-2aa9-4315-bcc4-9c022bb816d6",
+      "name": "rock-flat",
+      "assetId": "9c90033a-8074-4d39-b73d-e9ff3a6dbd14",
+      "position": [
+        -106.10052696125894,
+        0.244718027056392,
+        -235.58733061027974
+      ],
+      "scale": [
+        3.463706094917119,
+        3.463706094917119,
+        3.463706094917119
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "castShadow": false,
+      "receiveShadow": true,
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
+    },
+    {
+      "id": "d463a1c0-4a3e-4492-ae10-0a0c072dc084",
+      "name": "Ocean floor",
+      "position": [
+        -35.72941280704313,
+        -2.5965064187677918,
+        -182.5634465409176
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "shape_mesh",
+      "materialAssignments": [
+        {
+          "color": "#aaaaaa",
+          "materialId": "9c901688-2da2-448b-94e6-b6bafa093a6f",
+          "name": "Default"
+        }
+      ],
+      "castShadow": true,
+      "receiveShadow": true,
+      "collisionDetection": false,
+      "shape": "landscape",
+      "landscape": {
+        "options": {
+          "sectionSize": 100,
+          "sections": {
+            "x": 4,
+            "y": 4
+          },
+          "density": 40
+        },
+        "heightMaps": []
+      },
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      },
+      "grass": {
+        "layers": []
+      }
+    },
+    {
+      "id": "cf0b2852-8c50-4690-858d-6fec85d2af5b",
+      "name": "Water",
+      "position": [
+        -35.72941280704313,
+        0,
+        -182.5634465409176
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "shape_mesh",
+      "materialAssignments": [
+        {
+          "color": "#aaaaaa",
+          "materialId": "9c900a02-13cc-46b3-a8c4-aae0a8f74522",
+          "name": "Default"
+        }
+      ],
+      "castShadow": true,
+      "receiveShadow": true,
+      "collisionDetection": false,
+      "shape": "landscape",
+      "landscape": {
+        "options": {
+          "sectionSize": 100,
+          "sections": {
+            "x": 4,
+            "y": 4
+          },
+          "density": 40
+        },
+        "heightMaps": []
+      },
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      },
+      "grass": {
+        "layers": []
       }
     }
   ]

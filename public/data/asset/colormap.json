@@ -1,0 +1,15 @@
+{
+  "name": "colormap",
+  "path": "",
+  "type": "texture",
+  "collisionDetection": true,
+  "id": "9c911d54-42be-4cc7-bc1d-c72b69e900bd",
+  "fileKey": "colormap.png",
+  "fileFormat": "png",
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\Textures\\colormap.png",
+  "texture": {
+    "flipY": true,
+    "wrapS": "repeat",
+    "wrapT": "repeat"
+  }
+}
