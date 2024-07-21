@@ -33,13 +33,13 @@ class ResourceActor extends BaseActor {
         return
       }
 
-      character.wood.value = Math.min(character.wood.value + 10, character.maxWood) 
+      character.wood.value = Math.min(character.wood.value + 6, character.maxWood) 
 
       
       setTimeout(() => {
         this.available = true
         this.object.visible = true
-      }, Math.random() * 2000 + 3000)
+      }, 10_000)
 
       //this.world.removeActor(this)
       this.available = false

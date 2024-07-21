@@ -148,7 +148,7 @@ class BuildService {
     })
     
 
-    this.player.wood.value
+    this.player.wood.value--
   }
 
   getBuildLocation(builder: BaseActor) {

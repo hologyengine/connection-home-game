@@ -7,12 +7,12 @@ import { MathUtils } from "three";
 @Actor()
 class Character extends BaseActor {
   public wood = signal(0);
-  public maxWood = 10000
+  public maxWood = 30
 
   private animation = attach(CharacterAnimationComponent)
   public readonly movement = attach(CharacterMovementComponent, {
     maxSpeed: 2.7,
-    maxSpeedSprint: 5,
+    maxSpeedSprint: 4,
     maxSpeedBackwards: 2.3,
     snapToGround: 0.1,
     autoStepMinWidth: 0.1,
