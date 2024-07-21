@@ -30,6 +30,7 @@ class Game extends GameInstance {
 
     goal.trigger.onBeginOverlapWithActor(character).subscribe(() => {
       this.won.value = true
+      character.thirdPartyCamera.showCursor()
     })
 
 
@@ -48,6 +49,8 @@ class Game extends GameInstance {
   }
 
   restart() {
+    window.location.reload()
+    this.won.value = false
     this.drowned.value = false
     const spawnPoint = this.world.findActorByType(SpawnPoint)
     const character = this.player.value!
