@@ -29,7 +29,11 @@ class ResourceActor extends BaseActor {
       if (!this.available) {
         return
       }
-      character.wood.value += 5
+      if (character.wood.value >= character.maxWood) {
+        return
+      }
+
+      character.wood.value = Math.min(character.wood.value + 10, character.maxWood) 
 
       
       setTimeout(() => {

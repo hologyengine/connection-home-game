@@ -2,11 +2,12 @@
 import { Actor, AnimationState, AnimationStateMachine, AssetLoader, BaseActor, attach, inject } from "@hology/core/gameplay";
 import { CharacterAnimationComponent, CharacterMovementComponent, CharacterMovementMode, ThirdPartyCameraComponent } from "@hology/core/gameplay/actors";
 import { signal } from "@preact/signals-react";
+import { MathUtils } from "three";
 
 @Actor()
 class Character extends BaseActor {
   public wood = signal(0);
-
+  public maxWood = 10000
 
   private animation = attach(CharacterAnimationComponent)
   public readonly movement = attach(CharacterMovementComponent, {
@@ -15,15 +16,15 @@ class Character extends BaseActor {
     maxSpeedBackwards: 1,
     snapToGround: 0.1,
     autoStepMinWidth: 0.1,
-    autoStepMaxHeight: 0.2,
-    maxSlopeClimbAngle: Math.PI / 4,
-    minSlopeSlideAngle: 0.7,
+    autoStepMaxHeight: 0.4,
+    maxSlopeClimbAngle: MathUtils.degToRad(60),
+    minSlopeSlideAngle: MathUtils.degToRad(60),
     fallingReorientation: true,
     fallingMovementControl: 0.2,
     colliderHeight: .4,
     colliderRadius: 0.2,
     jumpVelocity: 3.5,
-    offset: .1,
+    offset: .15,
     
 
   })
@@ -42,7 +43,7 @@ class Character extends BaseActor {
     const { scene, animations } = await this.assetLoader.getModelByAssetName('character-human')
 
     scene.traverse(o => o.castShadow = true)
-    scene.translateY(-0.1)
+    scene.translateY(-0.15)
 
     this.object.add(scene)
 
@@ -58,6 +59,7 @@ class Character extends BaseActor {
     walk.transitionsBetween(sprint, () => this.movement.isSprinting)
     idle.transitionsTo(sit, elapsedTime => elapsedTime > 1)
     sit.transitionsTo(walk, () => this.movement.horizontalSpeed > 0)
+    sprint.transitionsTo(idle, () => this.movement.horizontalSpeed === 0)
   
     for (const state of [idle, walk, sit, sprint]) {
       state.transitionsBetween(jump, () => this.movement.mode === CharacterMovementMode.falling)
