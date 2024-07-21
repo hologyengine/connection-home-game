@@ -11,9 +11,9 @@ class Character extends BaseActor {
 
   private animation = attach(CharacterAnimationComponent)
   public readonly movement = attach(CharacterMovementComponent, {
-    maxSpeed: 1.5,
-    maxSpeedSprint: 4,
-    maxSpeedBackwards: 1,
+    maxSpeed: 2.7,
+    maxSpeedSprint: 5,
+    maxSpeedBackwards: 2.3,
     snapToGround: 0.1,
     autoStepMinWidth: 0.1,
     autoStepMaxHeight: 0.4,

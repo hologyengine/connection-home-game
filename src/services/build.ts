@@ -26,7 +26,7 @@ class FloorActor extends BaseActor {
     this.disposed.subscribe(() => this.isDisposed = true)
     this.physics.addActor(this, [
       new BoxCollisionShape(new Vector3(1, 1, 1))
-        .withOffset(new Vector3(0, .15 - 0.45, 0))
+        .withOffset(new Vector3(0, .05 - 0.45, 0))
     ], {
       type: PhysicsBodyType.static,
       friction: 0.001,
@@ -45,7 +45,7 @@ class FloorActor extends BaseActor {
     scene.traverse(o => o.receiveShadow = true)
 
     scene.scale.multiplyScalar(2)
-    scene.translateY(0.1)
+    scene.translateY(-0.03)
     this.object.add(scene)
   }
 
@@ -170,4 +170,4 @@ const _buildLocation = new Vector3()
 const _direction = new Vector3()
 const up = new Vector3(0,1,0)
 
-export { BuildService }
+export { BuildService, FloorActor}

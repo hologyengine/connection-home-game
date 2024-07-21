@@ -88,37 +88,6 @@
       }
     },
     {
-      "id": "6d2a3129-b924-409d-9176-68a2c44f9016",
-      "name": "character-human",
-      "assetId": "9c900411-f946-449f-a3cb-25186de7f3ab",
-      "position": [
-        0.25401713707094586,
-        0,
-        4.66879792787114
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        "XYZ"
-      ],
-      "type": "asset_mesh",
-      "materialAssignments": [],
-      "collisionDetection": true,
-      "physics": {
-        "type": 2,
-        "friction": 0.5,
-        "density": 1,
-        "restitution": 0.5,
-        "mass": 1
-      }
-    },
-    {
       "id": "f329214a-d671-4c5d-97f0-e32583f65195",
       "name": "tree-autumn",
       "assetId": "9c900354-2ba0-4ab8-acaa-f32ff32aaabd",
@@ -366,7 +335,7 @@
       ],
       "castShadow": true,
       "receiveShadow": true,
-      "collisionDetection": false,
+      "collisionDetection": true,
       "shape": "landscape",
       "landscape": {
         "options": {
@@ -3965,6 +3934,46 @@
       },
       "receiveShadow": false,
       "castShadow": true
+    },
+    {
+      "id": "4378279a-c204-42af-a25c-66a610ab5a08",
+      "name": "Goal Volume",
+      "position": [
+        -112.6525759997839,
+        -1.2000000000000006,
+        -117.89662576411409
+      ],
+      "scale": [
+        32.39746676415536,
+        49.99999999999997,
+        46.627935386883124
+      ],
+      "rotation": [
+        0,
+        -0.03622749227219457,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "TriggerVolume",
+        "innerParams": [
+          {
+            "path": [
+              "trigger"
+            ],
+            "params": {}
+          },
+          {
+            "path": [
+              "trigger",
+              "editorMesh"
+            ],
+            "params": {}
+          }
+        ],
+        "params": {}
+      }
     }
   ]
 }
