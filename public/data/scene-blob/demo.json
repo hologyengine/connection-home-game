@@ -3974,6 +3974,77 @@
         ],
         "params": {}
       }
+    },
+    {
+      "id": "59e17777-1d5e-4056-b563-c8fcefdbf053",
+      "name": "Water Volume",
+      "position": [
+        -0.5166330491415749,
+        0,
+        0.4720326274076001
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "actor",
+      "actor": {
+        "type": "TriggerVolume",
+        "innerParams": [
+          {
+            "path": [
+              "trigger"
+            ],
+            "params": {}
+          },
+          {
+            "path": [
+              "trigger",
+              "editorMesh"
+            ],
+            "params": {}
+          }
+        ],
+        "params": {}
+      }
+    },
+    {
+      "id": "6e4d3a63-d8b9-4f9d-9bc9-22002094afb5",
+      "name": "floor-old",
+      "assetId": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
+      "position": [
+        -102.49796174134713,
+        3.3942856629971487,
+        -251.89345536825047
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "type": "asset_mesh",
+      "materialAssignments": [],
+      "collisionDetection": true,
+      "physics": {
+        "type": 2,
+        "friction": 0.5,
+        "density": 1,
+        "restitution": 0.5,
+        "mass": 1
+      }
     }
   ]
 }

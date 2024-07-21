@@ -31,6 +31,7 @@ class Game extends GameInstance {
     goal.trigger.onBeginOverlapWithActor(character).subscribe(() => {
       this.won.value = true
       character.thirdPartyCamera.showCursor()
+      this.playerController.stop()
     })
 
 
@@ -45,6 +46,7 @@ class Game extends GameInstance {
       console.log("Hit water")
       this.drowned.value = true
       character.thirdPartyCamera.showCursor()
+      this.playerController.stop()
     })
   }
 

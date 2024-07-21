@@ -12,9 +12,12 @@ function ResourceDisplay() {
   const game = useService(Game)
   const player = game.player.value
 
-  return <>
-    <h1>{player?.wood}</h1>
-  </>
+  return <div className='resource-item'>
+    <div className='resource-amount'>{player?.wood} / {player?.maxWood}</div>
+    <div className="resource">
+      <img src="/wood.png" alt="" width={'10'} />
+    </div>
+  </div>
 }
 
 function WonOverlay() {
@@ -42,8 +45,11 @@ function GameOverOverlay() {
   
 
   return <>
-    <h1>Game over</h1>
-    <button onClick={() => game.restart()}>Try again</button>
+  <div className='end-overlay'>
+  <h1>Game over</h1>
+  <button onClick={() => game.restart()}>Try again</button>
+  </div>
+   
   </>
 }
 

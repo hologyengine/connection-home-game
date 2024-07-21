@@ -50,6 +50,11 @@ class PlayerController {
     this.inputService.setKeybind(InputAction.build, new Keybind('q'))
   }
 
+  public stop() {
+    this.inputService.stop()
+    this.character.movement.directionInput.vector.set(0,0)
+  }
+
   public setup(character: Character) {
     this.inputService.stop()
     this.character = character
