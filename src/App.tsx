@@ -1,11 +1,12 @@
 import 'reflect-metadata'
 import './App.css';
-import { HologyScene, useService } from '@hology/react'
+import { HologyRuntimeContext, HologyScene, useService } from '@hology/react'
 import shaders from './shaders'
 import actors from './actors'
 import Game from './services/game'
-import { World } from '@hology/core/gameplay';
+import { HologyRuntimeStatus, World } from '@hology/core/gameplay';
 import Character from './actors/character';
+import { useContext } from 'react';
 
 
 function ResourceDisplay() {
@@ -15,7 +16,7 @@ function ResourceDisplay() {
   return <div className='resource-item'>
     <div className='resource-amount'>{player?.wood} / {player?.maxWood}</div>
     <div className="resource">
-      <img src="/wood.png" alt="" width={'10'} />
+      <img src="./wood.png" alt="" width={'10'} />
     </div>
   </div>
 }
@@ -34,6 +35,7 @@ function WonOverlay() {
 }
 
 function GameOverOverlay() {
+
   const game = useService(Game)
   const drowned = game.drowned.value
   if (!drowned) {
@@ -55,11 +57,16 @@ function GameOverOverlay() {
 
 function App() {
   return (
-    <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors}>
-      <ResourceDisplay/>
-      <GameOverOverlay/>
-      <WonOverlay/>
-    </HologyScene>
+    <div>
+      <p>Loading...</p>
+      <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors}>
+        <Loading></Loading>
+        <ResourceDisplay/>
+        <GameOverOverlay/>
+        <WonOverlay/>
+      </HologyScene>
+    </div>
+
   );
 }
 

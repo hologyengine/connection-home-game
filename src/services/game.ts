@@ -65,6 +65,7 @@ class Game extends GameInstance {
       this.world.removeActor(a)
       this.physics.removeActor(a)
     })
+    this.playerController.resume()
     
   }
 }

@@ -1,32 +1,7 @@
 {
-  "9c90035e-506c-4bc1-b897-3e942b7bb1b0": {
-    "id": "9c90035e-506c-4bc1-b897-3e942b7bb1b0",
-    "name": "barrel-open",
-    "path": ""
-  },
   "9c90035d-4244-49b5-bacf-bcb6b4bdcb4f": {
     "id": "9c90035d-4244-49b5-bacf-bcb6b4bdcb4f",
     "name": "barrel",
-    "path": ""
-  },
-  "9c900360-3742-41d1-a5a2-ecf8203b4488": {
-    "id": "9c900360-3742-41d1-a5a2-ecf8203b4488",
-    "name": "bedroll-frame",
-    "path": ""
-  },
-  "9c900361-271a-4218-965e-0686724aeb02": {
-    "id": "9c900361-271a-4218-965e-0686724aeb02",
-    "name": "bedroll-packed",
-    "path": ""
-  },
-  "9c90035f-4724-4d0f-b399-9fa2c2a98614": {
-    "id": "9c90035f-4724-4d0f-b399-9fa2c2a98614",
-    "name": "bedroll",
-    "path": ""
-  },
-  "9c900363-11a6-4b34-ab83-d4b5e3d9608e": {
-    "id": "9c900363-11a6-4b34-ab83-d4b5e3d9608e",
-    "name": "bottle-large",
     "path": ""
   },
   "9c900362-16fc-4ee0-8816-fdab1e89b7a1": {
@@ -54,34 +29,9 @@
     "name": "box",
     "path": ""
   },
-  "9c900368-7e7a-4a32-887f-3212fe47876a": {
-    "id": "9c900368-7e7a-4a32-887f-3212fe47876a",
-    "name": "bucket",
-    "path": ""
-  },
-  "9c900369-7334-4943-801a-01fe6f824a7c": {
-    "id": "9c900369-7334-4943-801a-01fe6f824a7c",
-    "name": "campfire-fishing-stand",
-    "path": ""
-  },
-  "9c90036a-6a3c-4e58-88b0-4e757f1254ab": {
-    "id": "9c90036a-6a3c-4e58-88b0-4e757f1254ab",
-    "name": "campfire-pit",
-    "path": ""
-  },
-  "9c90036b-56ae-485f-b7e8-fbb9acfb22a1": {
-    "id": "9c90036b-56ae-485f-b7e8-fbb9acfb22a1",
-    "name": "campfire-stand",
-    "path": ""
-  },
   "9c900411-f946-449f-a3cb-25186de7f3ab": {
     "id": "9c900411-f946-449f-a3cb-25186de7f3ab",
     "name": "character-human",
-    "path": ""
-  },
-  "9c90036c-5180-4a6e-9763-30e635d66fa7": {
-    "id": "9c90036c-5180-4a6e-9763-30e635d66fa7",
-    "name": "chest",
     "path": ""
   },
   "9c911d54-42be-4cc7-bc1d-c72b69e900bd": {
@@ -89,133 +39,18 @@
     "name": "colormap",
     "path": ""
   },
-  "9c90036e-f08e-4908-8c70-8196fc89a0cd": {
-    "id": "9c90036e-f08e-4908-8c70-8196fc89a0cd",
-    "name": "fence-doorway",
-    "path": ""
-  },
-  "9c90036f-ea7a-477b-baca-62c0771e8f43": {
-    "id": "9c90036f-ea7a-477b-baca-62c0771e8f43",
-    "name": "fence-fortified",
-    "path": ""
-  },
-  "9c90036d-e9e6-4e61-8194-12972d0f1c65": {
-    "id": "9c90036d-e9e6-4e61-8194-12972d0f1c65",
-    "name": "fence",
-    "path": ""
-  },
-  "9c900371-e686-44d7-84b3-8a6d915924a4": {
-    "id": "9c900371-e686-44d7-84b3-8a6d915924a4",
-    "name": "fish-large",
-    "path": ""
-  },
-  "9c900370-e268-4437-a84c-905f7f4e94e8": {
-    "id": "9c900370-e268-4437-a84c-905f7f4e94e8",
-    "name": "fish",
-    "path": ""
-  },
-  "9c900373-e602-4575-9009-b49e83a959f2": {
-    "id": "9c900373-e602-4575-9009-b49e83a959f2",
-    "name": "floor-hole",
-    "path": ""
-  },
   "9c900374-f3c6-43c4-a65d-6679991b9c6a": {
     "id": "9c900374-f3c6-43c4-a65d-6679991b9c6a",
     "name": "floor-old",
-    "path": ""
-  },
-  "9c900372-ea68-4dea-92e5-a1bac8a07e40": {
-    "id": "9c900372-ea68-4dea-92e5-a1bac8a07e40",
-    "name": "floor",
-    "path": ""
-  },
-  "9c900376-f4e6-4593-b8c6-573f92e709fc": {
-    "id": "9c900376-f4e6-4593-b8c6-573f92e709fc",
-    "name": "grass-large",
-    "path": ""
-  },
-  "9c900375-ee5c-47a6-b352-f7b27e6b9d1d": {
-    "id": "9c900375-ee5c-47a6-b352-f7b27e6b9d1d",
-    "name": "grass",
     "path": ""
   },
   "9c9128b3-80fc-4de2-bf8a-b9657939b14f": {
     "id": "9c9128b3-80fc-4de2-bf8a-b9657939b14f",
     "name": "Ice"
   },
-  "9c900379-6e74-4095-869b-213c9c36475c": {
-    "id": "9c900379-6e74-4095-869b-213c9c36475c",
-    "name": "metal-panel-narrow",
-    "path": ""
-  },
-  "9c90037b-73c2-496a-b3db-ba3acf2a201c": {
-    "id": "9c90037b-73c2-496a-b3db-ba3acf2a201c",
-    "name": "metal-panel-screws-half",
-    "path": ""
-  },
-  "9c90037c-793e-4d49-9560-3f9d8aad50ff": {
-    "id": "9c90037c-793e-4d49-9560-3f9d8aad50ff",
-    "name": "metal-panel-screws-narrow",
-    "path": ""
-  },
-  "9c90037a-6bc6-4c2a-8357-05890a74d915": {
-    "id": "9c90037a-6bc6-4c2a-8357-05890a74d915",
-    "name": "metal-panel-screws",
-    "path": ""
-  },
-  "9c900378-0412-4b54-af0e-744cb55f88c4": {
-    "id": "9c900378-0412-4b54-af0e-744cb55f88c4",
-    "name": "metal-panel",
-    "path": ""
-  },
-  "9c90037e-97aa-44f1-ba9b-6e5b5de94e74": {
-    "id": "9c90037e-97aa-44f1-ba9b-6e5b5de94e74",
-    "name": "patch-grass-large",
-    "path": ""
-  },
-  "9c90037d-7cf8-4468-a195-3202af421e0a": {
-    "id": "9c90037d-7cf8-4468-a195-3202af421e0a",
-    "name": "patch-grass",
-    "path": ""
-  },
   "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1": {
     "id": "9c900337-f728-49e3-9fcf-cdb7c7a2f8c1",
     "name": "resource-planks",
-    "path": ""
-  },
-  "9c900338-80b2-49ee-b704-7e853cee8123": {
-    "id": "9c900338-80b2-49ee-b704-7e853cee8123",
-    "name": "resource-stone-large",
-    "path": ""
-  },
-  "9c900338-22de-4807-a56d-6b7ba303144b": {
-    "id": "9c900338-22de-4807-a56d-6b7ba303144b",
-    "name": "resource-stone",
-    "path": ""
-  },
-  "9c900338-e0ca-4fa9-b221-43560dc8ff5b": {
-    "id": "9c900338-e0ca-4fa9-b221-43560dc8ff5b",
-    "name": "resource-wood",
-    "path": ""
-  },
-  "9c900339-39bc-4b41-886e-d8d4cbe6b6c7": {
-    "id": "9c900339-39bc-4b41-886e-d8d4cbe6b6c7",
-    "name": "rock-a",
-    "path": ""
-  },
-  "9c900339-9b64-4ad2-8f0b-9fbf38a0d94e": {
-    "id": "9c900339-9b64-4ad2-8f0b-9fbf38a0d94e",
-    "name": "rock-b",
-    "path": ""
-  },
-  "9c90033a-0d88-4be1-9e5e-e946cbe7ce51": {
-    "id": "9c90033a-0d88-4be1-9e5e-e946cbe7ce51",
-    "name": "rock-c",
-    "path": ""
-  },
-  "9c90033a-fbd0-457d-9856-7dfe45824d52": {
-    "id": "9c90033a-fbd0-457d-9856-7dfe45824d52",
-    "name": "rock-flat-grass",
     "path": ""
   },
   "9c90033a-8074-4d39-b73d-e9ff3a6dbd14": {
@@ -242,128 +77,13 @@
     "id": "9c901688-2da2-448b-94e6-b6bafa093a6f",
     "name": "Sand"
   },
-  "9c90033e-0c3a-4114-b650-50cca20da999": {
-    "id": "9c90033e-0c3a-4114-b650-50cca20da999",
-    "name": "signpost-single",
-    "path": ""
-  },
-  "9c90033d-5b96-40f7-906f-329b97ba9fed": {
-    "id": "9c90033d-5b96-40f7-906f-329b97ba9fed",
-    "name": "signpost",
-    "path": ""
-  },
-  "9c900340-123c-4d85-89ba-a9fba2a78e8e": {
-    "id": "9c900340-123c-4d85-89ba-a9fba2a78e8e",
-    "name": "structure-canvas",
-    "path": ""
-  },
-  "9c900340-da50-4f40-81cf-87032b354135": {
-    "id": "9c900340-da50-4f40-81cf-87032b354135",
-    "name": "structure-floor",
-    "path": ""
-  },
-  "9c900342-98f4-41e0-9909-82fc04bd16a5": {
-    "id": "9c900342-98f4-41e0-9909-82fc04bd16a5",
-    "name": "structure-metal-doorway",
-    "path": ""
-  },
-  "9c900343-70a8-4ebf-97da-06507bc410c6": {
-    "id": "9c900343-70a8-4ebf-97da-06507bc410c6",
-    "name": "structure-metal-floor",
-    "path": ""
-  },
-  "9c900344-528e-42f4-9bc0-e4cfaa52f156": {
-    "id": "9c900344-528e-42f4-9bc0-e4cfaa52f156",
-    "name": "structure-metal-roof",
-    "path": ""
-  },
-  "9c900345-7a74-4d4e-bba9-e81c7324ac0e": {
-    "id": "9c900345-7a74-4d4e-bba9-e81c7324ac0e",
-    "name": "structure-metal-wall",
-    "path": ""
-  },
-  "9c900341-a886-461d-b3f6-55a5b6ec65b4": {
-    "id": "9c900341-a886-461d-b3f6-55a5b6ec65b4",
-    "name": "structure-metal",
-    "path": ""
-  },
-  "9c900347-5272-4381-81ed-11d542acc877": {
-    "id": "9c900347-5272-4381-81ed-11d542acc877",
-    "name": "structure-roof",
-    "path": ""
-  },
-  "9c90033e-d6ba-41df-a851-0f497ef130e6": {
-    "id": "9c90033e-d6ba-41df-a851-0f497ef130e6",
-    "name": "structure",
-    "path": ""
-  },
   "9c911d01-b634-4856-8d80-d119d3e27eea": {
     "id": "9c911d01-b634-4856-8d80-d119d3e27eea",
     "name": "SurvivalMain"
   },
-  "9c90034a-060c-45b5-a708-b3564097d1d0": {
-    "id": "9c90034a-060c-45b5-a708-b3564097d1d0",
-    "name": "tent-canvas-half",
-    "path": ""
-  },
-  "9c900349-33f8-47a5-b2a2-8f09348052da": {
-    "id": "9c900349-33f8-47a5-b2a2-8f09348052da",
-    "name": "tent-canvas",
-    "path": ""
-  },
-  "9c900348-409c-449b-b567-5e1df154a93f": {
-    "id": "9c900348-409c-449b-b567-5e1df154a93f",
-    "name": "tent",
-    "path": ""
-  },
-  "9c90034b-a41c-4140-8ece-acddb0458f05": {
-    "id": "9c90034b-a41c-4140-8ece-acddb0458f05",
-    "name": "tool-axe-upgraded",
-    "path": ""
-  },
   "9c90034a-db2c-4f3c-8837-af44784a9bbc": {
     "id": "9c90034a-db2c-4f3c-8837-af44784a9bbc",
     "name": "tool-axe",
-    "path": ""
-  },
-  "9c90034d-63ba-4c91-a0d9-5036068b61f2": {
-    "id": "9c90034d-63ba-4c91-a0d9-5036068b61f2",
-    "name": "tool-hammer-upgraded",
-    "path": ""
-  },
-  "9c90034c-7d1a-40ba-a4ca-47ec7994e8d3": {
-    "id": "9c90034c-7d1a-40ba-a4ca-47ec7994e8d3",
-    "name": "tool-hammer",
-    "path": ""
-  },
-  "9c90034f-1b9c-4fd4-89d6-c920c7da70c4": {
-    "id": "9c90034f-1b9c-4fd4-89d6-c920c7da70c4",
-    "name": "tool-hoe-upgraded",
-    "path": ""
-  },
-  "9c90034e-432a-4f8e-94ba-ba39986ef752": {
-    "id": "9c90034e-432a-4f8e-94ba-ba39986ef752",
-    "name": "tool-hoe",
-    "path": ""
-  },
-  "9c900350-c550-4ec2-acf3-273b7cdde000": {
-    "id": "9c900350-c550-4ec2-acf3-273b7cdde000",
-    "name": "tool-pickaxe-upgraded",
-    "path": ""
-  },
-  "9c90034f-ef36-4ec2-842c-9e46c80877f1": {
-    "id": "9c90034f-ef36-4ec2-842c-9e46c80877f1",
-    "name": "tool-pickaxe",
-    "path": ""
-  },
-  "9c900352-76de-4a48-8af3-8dee71d049c5": {
-    "id": "9c900352-76de-4a48-8af3-8dee71d049c5",
-    "name": "tool-shovel-upgraded",
-    "path": ""
-  },
-  "9c900351-9732-4084-a70e-5f7c2b60557f": {
-    "id": "9c900351-9732-4084-a70e-5f7c2b60557f",
-    "name": "tool-shovel",
     "path": ""
   },
   "9c900355-025a-4a29-a0d7-1c2483da8f4c": {
@@ -386,26 +106,6 @@
     "name": "tree-log-small",
     "path": ""
   },
-  "9c900356-ca0e-45b1-bf7c-2222f47dacc6": {
-    "id": "9c900356-ca0e-45b1-bf7c-2222f47dacc6",
-    "name": "tree-log",
-    "path": ""
-  },
-  "9c900358-9e9c-4776-9ace-f30484505b65": {
-    "id": "9c900358-9e9c-4776-9ace-f30484505b65",
-    "name": "tree-tall",
-    "path": ""
-  },
-  "9c900359-88fc-4818-935a-b6484bb57d8a": {
-    "id": "9c900359-88fc-4818-935a-b6484bb57d8a",
-    "name": "tree-trunk",
-    "path": ""
-  },
-  "9c900353-5946-4913-9e58-951546a6dea1": {
-    "id": "9c900353-5946-4913-9e58-951546a6dea1",
-    "name": "tree",
-    "path": ""
-  },
   "9c900a02-13cc-46b3-a8c4-aae0a8f74522": {
     "id": "9c900a02-13cc-46b3-a8c4-aae0a8f74522",
     "name": "WaterMaterial"
@@ -418,21 +118,6 @@
   "9c9005fb-7642-4300-b9c6-2a834d05f6fe": {
     "id": "9c9005fb-7642-4300-b9c6-2a834d05f6fe",
     "name": "wave pattern",
-    "path": ""
-  },
-  "9c90035b-5b64-4158-b6b5-d84c94f32868": {
-    "id": "9c90035b-5b64-4158-b6b5-d84c94f32868",
-    "name": "workbench-anvil",
-    "path": ""
-  },
-  "9c90035c-4c18-449e-bc81-ee01a9122fd1": {
-    "id": "9c90035c-4c18-449e-bc81-ee01a9122fd1",
-    "name": "workbench-grind",
-    "path": ""
-  },
-  "9c90035a-70fa-4c64-8714-eeed82fa4bd2": {
-    "id": "9c90035a-70fa-4c64-8714-eeed82fa4bd2",
-    "name": "workbench",
     "path": ""
   }
 }

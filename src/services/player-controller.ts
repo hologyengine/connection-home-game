@@ -55,6 +55,10 @@ class PlayerController {
     this.character.movement.directionInput.vector.set(0,0)
   }
 
+  public resume() {
+    this.inputService.start()
+  }
+
   public setup(character: Character) {
     this.inputService.stop()
     this.character = character
