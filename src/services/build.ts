@@ -1,7 +1,6 @@
-import { BoxCollisionShape, ConvexPolyhedronCollisionShape, PlaneCollisionShape } from "@hology/core";
+import { BoxCollisionShape } from "@hology/core";
 import { Actor, AssetLoader, BaseActor, PhysicsBodyType, PhysicsSystem, RayTestResult, Service, World, inject } from "@hology/core/gameplay";
-import { BoxGeometry, Euler, Material, Mesh, MeshLambertMaterial, Object3D, Vector3 } from "three";
-import { Vector } from "three/examples/jsm/Addons.js";
+import { Material, Mesh, MeshLambertMaterial, Object3D, Vector3 } from "three";
 import Character from "../actors/character";
 
 
@@ -126,7 +125,7 @@ class BuildService {
     }
 
     if (this.usedLocations.some(l => l.equals(buildLocation))) {
-      console.log("Already built on " + buildLocation)
+      //console.log("Already built on " + buildLocation)
       return
     }
 
@@ -170,4 +169,4 @@ const _buildLocation = new Vector3()
 const _direction = new Vector3()
 const up = new Vector3(0,1,0)
 
-export { BuildService, FloorActor}
+export { BuildService, FloorActor };

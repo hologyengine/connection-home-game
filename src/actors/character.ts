@@ -16,11 +16,11 @@ class Character extends BaseActor {
     maxSpeedBackwards: 2.3,
     snapToGround: 0.1,
     autoStepMinWidth: 0.1,
-    autoStepMaxHeight: 0.4,
+    autoStepMaxHeight: 0.3,
     maxSlopeClimbAngle: MathUtils.degToRad(60),
     minSlopeSlideAngle: MathUtils.degToRad(60),
     fallingReorientation: true,
-    fallingMovementControl: 0.2,
+    fallingMovementControl: 0,
     colliderHeight: .4,
     colliderRadius: 0.2,
     jumpVelocity: 3.5,
@@ -43,8 +43,6 @@ class Character extends BaseActor {
     const { scene, animations } = await this.assetLoader.getModelByAssetName('character-human')
 
     scene.traverse(o => o.castShadow = true)
-    scene.translateY(-0.15)
-
     this.object.add(scene)
 
     const clips = Object.fromEntries(animations.map(clip => [clip.name, clip]))
@@ -69,8 +67,8 @@ class Character extends BaseActor {
 
     this.animation.setup(scene)
     this.animation.playStateMachine(sm)
-  }
 
+  }
 }
 
 export default Character

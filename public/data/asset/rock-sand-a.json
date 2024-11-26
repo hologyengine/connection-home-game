@@ -6,5 +6,13 @@
   "id": "9c90033b-8d3e-4e4e-a0df-54bcd261dd8b",
   "fileKey": "rock-sand-a.glb",
   "fileFormat": "glb",
-  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-sand-a.glb"
+  "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-sand-a.glb",
+  "mesh": {
+    "collisions": {
+      "shapeType": "mesh"
+    }
+  },
+  "collisions": {
+    "shapeType": "mesh"
+  }
 }

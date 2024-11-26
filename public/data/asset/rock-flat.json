@@ -7,7 +7,14 @@
   "fileKey": "rock-flat.glb",
   "fileFormat": "glb",
   "sourceFile": "C:\\Users\\adamr\\Downloads\\kenney_survival-kit\\Models\\GLB format\\rock-flat.glb",
-  "mesh": {},
+  "mesh": {
+    "collisions": {
+      "shapeType": "mesh"
+    }
+  },
   "castShadow": false,
-  "receiveShadow": true
+  "receiveShadow": true,
+  "collisions": {
+    "shapeType": "mesh"
+  }
 }

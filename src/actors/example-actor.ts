@@ -16,10 +16,6 @@ class ExampleActor extends BaseActor {
 
   }
 
-  onUpdate(deltaTime: number) {
-
-  } 
-
 }
 
 export default ExampleActor

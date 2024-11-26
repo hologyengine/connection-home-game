@@ -1,12 +1,9 @@
 import 'reflect-metadata'
 import './App.css';
-import { HologyRuntimeContext, HologyScene, useService } from '@hology/react'
+import { HologyScene, useService } from '@hology/react'
 import shaders from './shaders'
 import actors from './actors'
 import Game from './services/game'
-import { HologyRuntimeStatus, World } from '@hology/core/gameplay';
-import Character from './actors/character';
-import { useContext } from 'react';
 
 
 function ResourceDisplay() {
@@ -59,8 +56,7 @@ function App() {
   return (
     <div>
       <p>Loading...</p>
-      <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors}>
-        <Loading></Loading>
+      <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors} rendering={{maxPixelRatio: 1}}>
         <ResourceDisplay/>
         <GameOverOverlay/>
         <WonOverlay/>

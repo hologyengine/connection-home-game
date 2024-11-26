@@ -1,5 +1,5 @@
 
-import { Actor, BaseActor, GameInstance, Inject, PhysicsSystem, Service, World, attach, inject } from '@hology/core/gameplay';
+import { Actor, BaseActor, GameInstance, PhysicsSystem, Service, World, attach, inject } from '@hology/core/gameplay';
 import { SpawnPoint, TriggerVolume, TriggerVolumeComponent } from '@hology/core/gameplay/actors';
 import Character from '../actors/character';
 import PlayerController from './player-controller.js';

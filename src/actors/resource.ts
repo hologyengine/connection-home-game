@@ -1,14 +1,13 @@
 
-import {Actor, AssetLoader, BaseActor, inject, PhysicsBodyType, PhysicsSystem, World} from '@hology/core/gameplay';
-import {BoxCollisionShape, SphereCollisionShape} from '@hology/core';
-import {Vector3} from 'three';
+import { SphereCollisionShape } from '@hology/core';
+import { Actor, AssetLoader, BaseActor, inject, PhysicsSystem } from '@hology/core/gameplay';
+import { Vector3 } from 'three';
 import Character from './character';
 
 @Actor()
 class ResourceActor extends BaseActor {
   private physics = inject(PhysicsSystem)
   private assetLoader = inject(AssetLoader)
-  private world = inject(World)
 
   available = true
 

@@ -15,7 +15,7 @@ export default class Water extends NodeShader {
 
   output(): NodeShaderOutput {
     const worldPosition = uniforms.modelMatrix.multiplyVec(transformed.position)
-    const worldCoord = varyingVec2(worldPosition.xz())
+    const worldCoord = varyingVec2(worldPosition.xz)
 
 
     const noise = new SimplexNoiseNode(worldCoord)
@@ -24,24 +24,24 @@ export default class Water extends NodeShader {
 
     const time = timeUniforms.elapsed
     // .add(vec2(1,1).multiplyScalar(noise).multiplyScalar(0.01)
-    const waterNoise = textureSampler2d(this.texture).sample(worldCoord.multiplyScalar(0.2).add(vec2(0.3, 1).multiplyScalar(time).multiplyScalar(0.05))).rgb()
-    const waterNoise2 = textureSampler2d(this.texture).sample(worldCoord.multiplyScalar(0.4).add(vec2(-0.8, .23).multiplyScalar(time).multiplyScalar(0.05))).rgb()
+    const waterNoise = textureSampler2d(this.texture).sample(worldCoord.multiplyScalar(0.2).add(vec2(0.3, 1).multiplyScalar(time).multiplyScalar(0.05))).rgb
+    const waterNoise2 = textureSampler2d(this.texture).sample(worldCoord.multiplyScalar(0.4).add(vec2(-0.8, .23).multiplyScalar(time).multiplyScalar(0.05))).rgb
 
     const depth = linearEyeDepth.subtract(fragmentLinearEyeDepth).divide(linearEyeDepth)
 
 
     const baseWaterColor = mix(rgb(this.color), rgb(this.colorShallow), oneMinus(depth.multiply(depth))) as RgbNode
-    const withWaterNoise = mix(mix(baseWaterColor, white, waterNoise.x().multiply(0.2)), white, waterNoise2.multiplyScalar(0.05))
+    const withWaterNoise = mix(mix(baseWaterColor, white, waterNoise.x.multiply(0.2)), white, waterNoise2.multiplyScalar(0.05))
 
     const withFoam = mix(white, withWaterNoise, (step(sin(time.multiply(1.2)).multiply(0.5).multiply(0.05).multiply(noise.multiply(0.5).add(0.2)).add(0.03), depth)))
     
     const cp = new Vec3ExpressionNode('cameraPosition')
-    const viewDir = normalize(cp.subtract(varyingVec3(worldPosition.xyz())))
+    const viewDir = normalize(cp.subtract(varyingVec3(worldPosition.xyz)))
 
     const ndir = dot(varyingAttributes.normal, viewDir)
     
     return {
-      color: rgba(lambertMaterial({color: withFoam}).rgb(), max(depth.add(ndir.divide(1)), float(0.3)))
+      color: rgba(lambertMaterial({color: withFoam}).rgb, max(depth.add(ndir.divide(1)), float(0.3)))
       //color: rgba(rgb(0xffffff).multiplyScalar(depth.add(ndir.divide(2))))
     }
   } 
