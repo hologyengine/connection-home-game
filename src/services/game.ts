@@ -1,5 +1,5 @@
 
-import { Actor, BaseActor, GameInstance, PhysicsSystem, Service, World, attach, inject } from '@hology/core/gameplay';
+import { Actor, BaseActor, GameInstance, PhysicsSystem, Service, ViewController, World, attach, inject } from '@hology/core/gameplay';
 import { SpawnPoint, TriggerVolume, TriggerVolumeComponent } from '@hology/core/gameplay/actors';
 import Character from '../actors/character';
 import PlayerController from './player-controller.js';
@@ -15,12 +15,35 @@ class Game extends GameInstance {
   readonly won = signal(false)
   readonly drowned = signal(false)
   private physics = inject(PhysicsSystem)
+  private viewController = inject(ViewController)
+
+  public readonly bestTime = signal<number|null>(null)
+  public readonly currentTime = signal<number|null>(null)
 
   async onStart() {
     const spawnPoint = this.world.findActorByType(SpawnPoint)
     const character = await spawnPoint.spawnActor(Character)
     this.playerController.setup(character)
     this.player.value = character
+    let finished = false
+
+
+    this.viewController.onLateUpdate().subscribe(deltaTime => {
+      // Delta time could be used to move softly
+
+      const distanceFromSpawn = spawnPoint.position.distanceTo(character.position)
+      if (distanceFromSpawn > 2 && this.currentTime.value == null) {
+        this.currentTime.value = 0
+      } else if (this.currentTime.value != null && !finished) {
+        this.currentTime.value += deltaTime
+      }
+    })
+
+    const storedBestTime = localStorage.getItem('besttime')
+    if (storedBestTime != null && !isNaN(parseFloat(storedBestTime))) {
+      this.bestTime.value = parseFloat(storedBestTime)
+    }
+
 
     const goal = this.world.findActorsByType(TriggerVolume).find(o => o.object.name === 'Goal Volume')
     if (goal == null) {
@@ -32,6 +55,14 @@ class Game extends GameInstance {
       this.won.value = true
       character.thirdPartyCamera.showCursor()
       this.playerController.stop()
+
+      if (this.currentTime.value != null) {
+        if (this.bestTime.value == null || this.currentTime.value < this.bestTime.value) {
+          const bestTime = this.bestTime.value = this.currentTime.value
+          localStorage.setItem('besttime', bestTime.toString())
+        }
+      }
+      finished = true
     })
 
 
