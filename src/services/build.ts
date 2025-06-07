@@ -18,7 +18,7 @@ class FloorActor extends BaseActor {
 
   // Number of seconds to survive
   // Some randomness
-  private health = 15 + 50 * Math.random()
+  private health = 10 + 50 * Math.random()
   private isDisposed = false
 
   async onInit(): Promise<void> {

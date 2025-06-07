@@ -6,7 +6,7 @@ import { MathUtils } from "three";
 
 @Actor()
 class Character extends BaseActor {
-  public wood = signal(9999);
+  public wood = signal(0);
   public maxWood = 30
 
   private animation = attach(CharacterAnimationComponent)
