@@ -78,7 +78,7 @@ function App() {
   return (
     <div>
       <p>Loading...</p>
-      <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors} rendering={{maxPixelRatio: 1}}>
+      <HologyScene gameClass={Game} sceneName='demo' dataDir='data' shaders={shaders} actors={actors}>
         <ResourceDisplay/>
         <GameOverOverlay/>
         <WonOverlay/>
