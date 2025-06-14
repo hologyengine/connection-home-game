@@ -22,9 +22,9 @@ function HighScores() {
   
   return <div style={{position: 'absolute', zIndex: 5, right: '40px', top: '0px'}}>
     <h4 style={{marginBottom:'0px'}}>Best</h4>
-    <p style={{marginTop:'px'}}>{numberToTime(bestTime)}</p>
+    <p style={{marginTop:'0px'}}>{numberToTime(bestTime)}</p>
     <h4 style={{marginBottom:'0px'}}>Current</h4>
-    <p style={{marginTop:'0px'}}>{numberToTime(currentTime)}</p>
+    <p style={{marginTop:'0px'}}>{numberToTime(currentTime ?? null)}</p>
   </div>
 }
 
