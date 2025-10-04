@@ -95,6 +95,9 @@ class BuildService {
 
     this.physics.afterStep.subscribe(() => {
 
+      // Show whether it is possible to build here.
+      // Another actor with the currently selected model but with a different material 
+
       if (this.isBuilding) {
         this.tryBuild()
       }
