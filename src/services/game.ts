@@ -7,6 +7,9 @@ import { signal } from '@preact/signals-react';
 import { FloorActor } from './build.js';
 import { Vector3 } from 'three';
 
+let pokiFinishedLoadingEvent = false
+
+
 @Service()
 class Game extends GameInstance {
   private world = inject(World)
@@ -21,6 +24,13 @@ class Game extends GameInstance {
   public readonly currentTime = signal<number|null>(null)
 
   async onStart() {
+    if (__POKI__) {
+      if (!pokiFinishedLoadingEvent) {
+        PokiSDK.gameLoadingFinished()
+        pokiFinishedLoadingEvent = true
+      }
+    }
+
     const spawnPoint = this.world.findActorByType(SpawnPoint)
     const character = await spawnPoint.spawnActor(Character)
     this.playerController.setup(character)

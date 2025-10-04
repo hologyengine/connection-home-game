@@ -7,6 +7,7 @@ import {
 } from "@hology/core/gameplay/input"
 import Character from "../actors/character"
 import { BuildService } from "./build"
+import { fromEvent, takeUntil } from "rxjs"
 
 enum InputAction {
   moveForward,
@@ -59,12 +60,25 @@ class PlayerController {
     this.inputService.start()
   }
 
+  private handledFirstInput = false
+
   public setup(character: Character) {
     this.inputService.stop()
     this.character = character
     this.bindCharacterInput()
     this.inputService.start()
     this.build.setup(character)
+
+    fromEvent<PointerEvent>(document, 'pointerdown')
+    .pipe(takeUntil(character.disposed))
+    .subscribe(() => {
+      if (!this.handledFirstInput) {
+        this.handledFirstInput = true
+        if (__POKI__) {
+          PokiSDK.gameplayStart()
+        }
+      }
+    })
   }
 
   private bindCharacterInput() {
