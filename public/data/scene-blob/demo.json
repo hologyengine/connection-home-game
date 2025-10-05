@@ -4093,6 +4093,96 @@
       ],
       "children": [
         {
+          "id": "bf527dbe-082b-413a-95a8-1c78f79b78dd",
+          "name": "TutorialStep_LastIsland",
+          "position": [
+            -8.785797490839329,
+            1.2055073931320979,
+            93.13112264266863
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "actor",
+          "actor": {
+            "type": "TutorialStep",
+            "innerParams": [
+              {
+                "path": [
+                  "volume"
+                ],
+                "params": {}
+              },
+              {
+                "path": [
+                  "volume",
+                  "editorMesh"
+                ],
+                "params": {
+                  "color": {
+                    "type": 10,
+                    "value": "#ffffff"
+                  }
+                }
+              }
+            ],
+            "params": {}
+          }
+        },
+        {
+          "id": "53a77d73-1fc8-46ae-9fd4-29b382df7510",
+          "name": "TutorialStep_FirstIsland",
+          "position": [
+            -11.544235239166028,
+            0.21494298604458528,
+            28.10735811515363
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "actor",
+          "actor": {
+            "type": "TutorialStep",
+            "innerParams": [
+              {
+                "path": [
+                  "volume"
+                ],
+                "params": {}
+              },
+              {
+                "path": [
+                  "volume",
+                  "editorMesh"
+                ],
+                "params": {
+                  "color": {
+                    "type": 10,
+                    "value": "#ffffff"
+                  }
+                }
+              }
+            ],
+            "params": {}
+          }
+        },
+        {
           "id": "f967903f-4eb1-4e77-b412-a0b5cf2e4466",
           "name": "TutorialStep_Collect",
           "position": [
@@ -4213,6 +4303,14 @@
               "buildStep": {
                 "type": 13,
                 "value": "eb59a898-9a27-419a-8a5d-395d22889f50"
+              },
+              "firstIsland": {
+                "type": 13,
+                "value": "53a77d73-1fc8-46ae-9fd4-29b382df7510"
+              },
+              "lastIsland": {
+                "type": 13,
+                "value": "bf527dbe-082b-413a-95a8-1c78f79b78dd"
               }
             }
           }

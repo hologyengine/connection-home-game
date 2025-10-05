@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 import './App.css';
-import { HologyScene, useService } from '@hology/react'
+import { HologyScene, useActorQuery, useService } from '@hology/react'
 import shaders from './shaders'
 import actors from './actors'
 import Game from './services/game'
@@ -9,6 +9,7 @@ import { effect } from '@preact/signals-react';
 import { ViewController } from '@hology/core/gameplay';
 import InputPrompt from './components/InputPrompt';
 import { activatePointerLock } from './utils/pointer-lock';
+import TutorialManager, { TutorialStepType } from './actors/tutorial-manager';
 
 
 type Lang = 'en' | 'zh' | 'ko' | 'ja'
@@ -23,6 +24,8 @@ const DICT = {
     playAgain: 'Play again',
     gameOver: 'Game over',
     tryAgain: 'Try again',
+    buildHintTitle: 'Build a Path',
+    buildHintBody: 'Press Q to build on the water in front of you.',
   },
   zh: {
     best: '最佳',
@@ -33,6 +36,8 @@ const DICT = {
     playAgain: '再玩一次',
     gameOver: '游戏结束',
     tryAgain: '再试一次',
+    buildHintTitle: '建造道路',
+    buildHintBody: '按 Q 在你前方的水面上建造。',
   },
   ko: {
     best: '최고 기록',
@@ -43,6 +48,8 @@ const DICT = {
     playAgain: '다시 플레이',
     gameOver: '게임 오버',
     tryAgain: '다시 시도',
+    buildHintTitle: '길을 건설',
+    buildHintBody: 'Q 키를 눌러 앞의 물 위에 건설하세요.',
   },
   ja: {
     best: 'ベスト',
@@ -53,6 +60,8 @@ const DICT = {
     playAgain: 'もう一度遊ぶ',
     gameOver: 'ゲームオーバー',
     tryAgain: 'もう一度',
+    buildHintTitle: '道を作ろう',
+    buildHintBody: 'Q を押して前方の水上に建設しよう。',
   },
 } as const
 
@@ -183,6 +192,74 @@ function StartHint() {
   </div>
 }
 
+function BuildHint() {
+  const [visible, setVisible] = useState(false)
+  const [tutorialManager] = useActorQuery({type: TutorialManager})
+  const view = useService(ViewController)
+  useEffect(() => {
+    if (tutorialManager == null) return
+    const subscription = tutorialManager.onStepStart.subscribe((stepType) => {
+      if (stepType === TutorialStepType.Build) {
+        setVisible(true)
+        // Setting it immediately will cause it to pause between frames
+        // and it is all black for some reason
+        setTimeout(() => {
+          view.paused = true
+        }, 1)
+      }
+    })
+    return () => subscription.unsubscribe()
+  }, [tutorialManager, view])
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'q' || e.key === 'Q') {
+        setVisible(false)
+        view.paused = false
+      }
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [view])
+
+  if (!visible) return false
+
+  const title = t('buildHintTitle')
+  const body = t('buildHintBody')
+
+  return <div style={{
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 6
+  }}>
+    <div style={{
+      background: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.4) 100%)',
+      padding: '14px 18px',
+      borderRadius: '14px',
+      border: '1px solid rgba(255,255,255,0.15)',
+      maxWidth: '86%',
+      color: '#fff',
+      textAlign: 'center',
+      textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+      boxShadow: '0 6px 24px rgba(0,0,0,0.35)',
+      backdropFilter: 'blur(4px)',
+      fontSize: '14px',
+      lineHeight: 1.35
+    }}>
+      <div style={{fontWeight: 700, fontSize: '16px', marginBottom: '6px'}}>{title} 🧱</div>
+      <div style={{opacity: 0.95}}>{body}</div>
+      <div style={{marginTop: '10px'}}>
+        <img className="key-hint" src={new URL('./assets/input/keyboard/keyboard_q.svg', import.meta.url).toString()} alt="Q" />
+      </div>
+    </div>
+  </div>
+}
+
 function ResourceDisplay() {
   const game = useService(Game)
   const player = game.player.value
@@ -276,6 +353,7 @@ function App() {
       >
         <ResourceDisplay />
         <StartHint />
+        <BuildHint />
         <GameOverOverlay onRestart={handleRestart}></GameOverOverlay>
         <WonOverlay />
         <HighScores></HighScores>

@@ -78,7 +78,7 @@ class Game extends GameInstance {
     })
 
 
-    const water = await this.world.spawnActor(WaterVolume, new Vector3(0, -4, 0))
+    const water = await this.world.spawnActor(WaterVolume, new Vector3(0, -2.8 -2.5, 0))
 
     if (water == null) {
       console.error("No trigger volume found with name Water Volume")
@@ -87,9 +87,28 @@ class Game extends GameInstance {
 
     water.trigger.onBeginOverlapWithActor(character).subscribe(() => {
       console.log("Hit water")
-      this.drowned.value = true
-      character.thirdPersonCamera.showCursor()
-      this.playerController.stop()
+      character.swimming.value = true
+      character.movement.gravityOverride = 0
+      character.movement.velocity.set(0,0,0)
+      character.movement.fallingMovementControl = 1
+      // Whould still be able to jump though
+      // Maybe have a separate launch instead of regular jump
+
+      // this.drowned.value = true
+      // character.thirdPersonCamera.showCursor()
+      // this.playerController.stop()
+    })
+    water.trigger.onEndOverlapWithActor(character).subscribe(() => {
+      character.swimming.value = false
+      console.log("Hit water")
+      character.movement.gravityOverride = null as unknown as number
+      character.movement.fallingMovementControl = 0.1
+      // Whould still be able to jump though
+      // Maybe have a separate launch instead of regular jump
+
+      // this.drowned.value = true
+      // character.thirdPersonCamera.showCursor()
+      // this.playerController.stop()
     })
   }
 
@@ -120,7 +139,7 @@ export default Game
 @Actor()
 class WaterVolume extends BaseActor {
 
-  trigger = attach(TriggerVolumeComponent, {dimensions: new Vector3(500, 5, 500)})
+  trigger = attach(TriggerVolumeComponent, {dimensions: new Vector3(500, 10, 500)})
 
 
 }

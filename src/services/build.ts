@@ -91,7 +91,7 @@ class BuildService {
 
   setup(player: Character) {
     this.player = player
-    this.physics.showDebug = false
+    // this.physics.showDebug = true
 
     this.physics.afterStep.subscribe(() => {
 

@@ -1,7 +1,7 @@
 
 import { Actor, AssetLoader, attach, BaseActor, inject } from "@hology/core/gameplay";
 import { TriggerVolumeComponent } from "@hology/core/gameplay/actors";
-import { BoxGeometry, Mesh, MeshBasicMaterial, Object3D, Vector3 } from "three";
+import { Object3D, Vector3 } from "three";
 
 @Actor()
 class TutorialStep extends BaseActor {
@@ -9,7 +9,7 @@ class TutorialStep extends BaseActor {
   private assetLoader = inject(AssetLoader)
 
   public readonly volume = attach(TriggerVolumeComponent, {
-    dimensions: new Vector3(1,1,1)
+    dimensions: new Vector3(1.5,1.5,1.5)
   })
 
   private mesh?: Object3D
