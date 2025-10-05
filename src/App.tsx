@@ -7,6 +7,7 @@ import Game from './services/game'
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { effect } from '@preact/signals-react';
 import { ViewController } from '@hology/core/gameplay';
+import InputPrompt from './components/InputPrompt';
 
 
 function HighScores() {
@@ -124,6 +125,7 @@ function App() {
         <GameOverOverlay onRestart={handleRestart}></GameOverOverlay>
         <WonOverlay />
         <HighScores></HighScores>
+        <InputPrompt />
       </HologyScene>
     </div>
   )
