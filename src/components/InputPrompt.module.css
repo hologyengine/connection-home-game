@@ -37,8 +37,8 @@
   filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
 }
 
-/* Chinese label overrides for better readability */
-.labelCn {
+/* CJK label overrides for better readability (Chinese/Korean) */
+.labelCjk {
   font-size: 16px;
   line-height: 1.1;
   font-weight: 500;

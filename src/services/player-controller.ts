@@ -33,9 +33,13 @@ class PlayerController {
     this.inputService.setKeybind(InputAction.jump, new Keybind(" "))
     this.inputService.setKeybind(InputAction.sprint, new Keybind("Shift"))
     this.inputService.setKeybind(InputAction.moveForward, new Keybind("w"))
+    this.inputService.setKeybind(InputAction.moveForward, new Keybind("ArrowUp"))
     this.inputService.setKeybind(InputAction.moveBackward, new Keybind("s"))
+    this.inputService.setKeybind(InputAction.moveBackward, new Keybind("ArrowDown"))
     this.inputService.setKeybind(InputAction.moveLeft, new Keybind("a"))
+    this.inputService.setKeybind(InputAction.moveLeft, new Keybind("ArrowLeft"))
     this.inputService.setKeybind(InputAction.moveRight, new Keybind("d"))
+    this.inputService.setKeybind(InputAction.moveRight, new Keybind("ArrowRight"))
     this.inputService.setMousebind(
       InputAction.rotate,
       new Mousebind(0.01, true, "x")
