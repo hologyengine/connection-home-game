@@ -63,7 +63,7 @@ class Game extends GameInstance {
 
     goal.trigger.onBeginOverlapWithActor(character).subscribe(() => {
       this.won.value = true
-      character.thirdPartyCamera.showCursor()
+      character.thirdPersonCamera.showCursor()
       this.playerController.stop()
 
       if (this.currentTime.value != null) {
@@ -86,7 +86,7 @@ class Game extends GameInstance {
     water.trigger.onBeginOverlapWithActor(character).subscribe(() => {
       console.log("Hit water")
       this.drowned.value = true
-      character.thirdPartyCamera.showCursor()
+      character.thirdPersonCamera.showCursor()
       this.playerController.stop()
     })
   }
@@ -100,7 +100,7 @@ class Game extends GameInstance {
     character.wood.value = 0
     character.position.copy(spawnPoint.position)
     this.physics.updateActorTransform(character)
-    character.thirdPartyCamera.hideCursor()
+    character.thirdPersonCamera.hideCursor()
 
     this.world.findActorsByType(FloorActor).forEach(a => {
       this.world.removeActor(a)

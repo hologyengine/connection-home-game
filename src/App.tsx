@@ -10,6 +10,66 @@ import { ViewController } from '@hology/core/gameplay';
 import InputPrompt from './components/InputPrompt';
 
 
+type Lang = 'en' | 'zh' | 'ko' | 'ja'
+
+const DICT = {
+  en: {
+    best: 'Best',
+    current: 'Current',
+    seconds: 'seconds',
+    loading: 'Loading...',
+    youMadeIt: 'You made it!',
+    playAgain: 'Play again',
+    gameOver: 'Game over',
+    tryAgain: 'Try again',
+  },
+  zh: {
+    best: '最佳',
+    current: '当前',
+    seconds: '秒',
+    loading: '加载中...',
+    youMadeIt: '你成功了！',
+    playAgain: '再玩一次',
+    gameOver: '游戏结束',
+    tryAgain: '再试一次',
+  },
+  ko: {
+    best: '최고 기록',
+    current: '현재',
+    seconds: '초',
+    loading: '로딩 중...',
+    youMadeIt: '해냈어요!',
+    playAgain: '다시 플레이',
+    gameOver: '게임 오버',
+    tryAgain: '다시 시도',
+  },
+  ja: {
+    best: 'ベスト',
+    current: '現在',
+    seconds: '秒',
+    loading: '読み込み中...',
+    youMadeIt: 'やったね！',
+    playAgain: 'もう一度遊ぶ',
+    gameOver: 'ゲームオーバー',
+    tryAgain: 'もう一度',
+  },
+} as const
+
+function getLang(): Lang {
+  const lang = typeof navigator !== 'undefined' ? navigator.language?.toLowerCase() : ''
+  if (lang?.startsWith('zh')) return 'zh'
+  if (lang?.startsWith('ko')) return 'ko'
+  if (lang?.startsWith('ja')) return 'ja'
+  return 'en'
+}
+
+function t<K extends keyof typeof DICT.en>(key: K): (typeof DICT)[Lang][K] {
+  const lang = getLang()
+  const value = DICT[lang][key] ?? DICT.en[key]
+  return value
+}
+
+
 function HighScores() {
   const game = useService(Game)
   const [bestTime, setBestTime] = useState<number|null>(0)
@@ -23,10 +83,10 @@ function HighScores() {
   }, [game])
   
   return <div style={{position: 'absolute', zIndex: 5, right: '40px', top: '0px'}}>
-    <h4 style={{marginBottom:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>Best</h4>
-    <p style={{marginTop:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{numberToTime(bestTime)}</p>
-    <h4 style={{marginBottom:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>Current</h4>
-    <p style={{marginTop:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{numberToTime(currentTime ?? null)}</p>
+    <h4 style={{marginBottom:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{t('best')}</h4>
+    <p style={{marginTop:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{numberToTime(bestTime, t('seconds'))}</p>
+    <h4 style={{marginBottom:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{t('current')}</h4>
+    <p style={{marginTop:'0px', textShadow:'0 1px 2px rgba(0,0,0,0.8)'}}>{numberToTime(currentTime ?? null, t('seconds'))}</p>
   </div>
 }
 
@@ -139,8 +199,8 @@ function WonOverlay() {
   }
 
   return <>
-    <h1>You made it!</h1>
-    <button onClick={() => game.restart()}>Play again</button>
+    <h1>{t('youMadeIt')}</h1>
+    <button onClick={() => game.restart()}>{t('playAgain')}</button>
   </>
 }
 
@@ -176,8 +236,8 @@ function GameOverOverlay({onRestart} : {onRestart?: () => void}) {
 
   return <>
     <div className='end-overlay'>
-      <h1>Game over</h1>
-      <button onClick={onClickRestart}>Try again</button>
+      <h1>{t('gameOver')}</h1>
+      <button onClick={onClickRestart}>{t('tryAgain')}</button>
     </div>
   </>
 }
@@ -201,7 +261,7 @@ function App() {
 
   return (
     <div>
-      <p>Loading...</p>
+      <p>{t('loading')}</p>
       <HologyScene
         key={sceneKey}
         gameClass={Game}
@@ -223,9 +283,9 @@ function App() {
 
 export default App;
 
-function numberToTime(num: number|null) {
+function numberToTime(num: number|null, secondsLabel: string = 'seconds') {
   if (num == null) {
     return '–'
   }
-  return num.toFixed(2) + ' seconds'
+  return num.toFixed(2) + ' ' + secondsLabel
 }

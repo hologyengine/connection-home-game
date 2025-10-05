@@ -1,6 +1,6 @@
 
 import { Actor, AnimationState, AnimationStateMachine, AssetLoader, BaseActor, attach, inject } from "@hology/core/gameplay";
-import { CharacterAnimationComponent, CharacterMovementComponent, CharacterMovementMode, ThirdPartyCameraComponent } from "@hology/core/gameplay/actors";
+import { CharacterAnimationComponent, CharacterMovementComponent, CharacterMovementMode, ThirdPersonCameraComponent } from "@hology/core/gameplay/actors";
 import { signal } from "@preact/signals-react";
 import { MathUtils } from "three";
 
@@ -28,13 +28,14 @@ class Character extends BaseActor {
     
 
   })
-  public readonly thirdPartyCamera = attach(ThirdPartyCameraComponent, {
+  public readonly thirdPersonCamera = attach(ThirdPersonCameraComponent, {
     height: .7,
     offsetX: 0,
     offsetZ: 0.2,
     minDistance: 3,
     maxDistance: 3,
     distance: 3,
+    collision: false,
   })
 
   private assetLoader = inject(AssetLoader)
