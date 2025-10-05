@@ -1,0 +1,89 @@
+{
+  "name": "TutorialYellow (copy)",
+  "type": "material",
+  "material": {
+    "type": "layered",
+    "params": {
+      "metalness": 0,
+      "opacity": 1
+    },
+    "side": 0,
+    "shaderParams": {
+      "layers": {
+        "type": 21,
+        "element": 23,
+        "value": [
+          {
+            "enabled": true,
+            "type": "solid",
+            "outputType": "rgba",
+            "opacity": 1,
+            "blendMode": "normal",
+            "params": {
+              "layers": {
+                "type": 21,
+                "element": 23,
+                "value": []
+              },
+              "color": {
+                "type": 10,
+                "value": "#dbba14"
+              }
+            }
+          },
+          {
+            "enabled": true,
+            "type": "solid",
+            "outputType": "rgba",
+            "opacity": 1,
+            "blendMode": "normal",
+            "params": {
+              "layers": {
+                "type": 21,
+                "element": 23,
+                "value": [
+                  {
+                    "enabled": true,
+                    "type": "gradientMask",
+                    "outputType": "rgba",
+                    "opacity": 1,
+                    "blendMode": "normal",
+                    "params": {
+                      "layers": {
+                        "type": 21,
+                        "element": 24,
+                        "value": []
+                      },
+                      "direction": {
+                        "type": 12,
+                        "value": "y"
+                      },
+                      "start": {
+                        "type": 1,
+                        "value": "1"
+                      },
+                      "end": {
+                        "type": 1,
+                        "value": "0"
+                      },
+                      "invert": {
+                        "type": 4,
+                        "value": false
+                      }
+                    }
+                  }
+                ]
+              },
+              "color": {
+                "type": 10,
+                "value": "#eefe0b"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "bloom": false
+  },
+  "id": "a00a89c5-ca4a-4dcc-a744-d01ccc98666c"
+}

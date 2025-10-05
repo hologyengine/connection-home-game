@@ -8,6 +8,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { effect } from '@preact/signals-react';
 import { ViewController } from '@hology/core/gameplay';
 import InputPrompt from './components/InputPrompt';
+import { activatePointerLock } from './utils/pointer-lock';
 
 
 type Lang = 'en' | 'zh' | 'ko' | 'ja'
@@ -95,7 +96,10 @@ function StartHint() {
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(false), 15000)
-    const dismiss = () => setVisible(false)
+    const dismiss = () => {
+      setVisible(false)
+      activatePointerLock()
+    }
     window.addEventListener('keydown', dismiss, { once: true })
     window.addEventListener('mousedown', dismiss, { once: true })
     window.addEventListener('touchstart', dismiss, { once: true })

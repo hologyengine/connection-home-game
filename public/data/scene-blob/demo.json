@@ -3728,37 +3728,6 @@
       ],
       "children": [
         {
-          "id": "b2e55086-6bdb-4fcf-8909-d2d16cc44b62",
-          "name": "tree-autumn-trunk",
-          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
-          "position": [
-            0.7454198114217974,
-            0,
-            1.3350346039433134
-          ],
-          "scale": [
-            1.5844190403328435,
-            1.5844190403328435,
-            1.5844190403328435
-          ],
-          "rotation": [
-            0,
-            0,
-            0,
-            "XYZ"
-          ],
-          "type": "asset_mesh",
-          "materialAssignments": [],
-          "collisionDetection": true,
-          "physics": {
-            "type": 2,
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "mass": 1
-          }
-        },
-        {
           "id": "fdbfc740-e06e-457a-9807-025cc12beafe",
           "name": "tree-autumn-trunk",
           "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
@@ -3790,137 +3759,13 @@
           }
         },
         {
-          "id": "4cf723ac-5b29-4c5f-80b8-67acbc350ed3",
+          "id": "da8d7147-60af-45f7-9b33-18ecdc98c979",
           "name": "tree-autumn-trunk",
           "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
           "position": [
-            -0.14682460395523833,
-            1.3322676295501878e-15,
-            -0.5403144608689558
-          ],
-          "scale": [
-            1.5844190403328435,
-            1.5844190403328435,
-            1.5844190403328435
-          ],
-          "rotation": [
-            0,
-            0,
-            0,
-            "XYZ"
-          ],
-          "type": "asset_mesh",
-          "materialAssignments": [],
-          "collisionDetection": true,
-          "physics": {
-            "type": 2,
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "mass": 1
-          }
-        },
-        {
-          "id": "8c11cf63-8af5-4849-a687-4f5d4452da1e",
-          "name": "tree-autumn-trunk",
-          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
-          "position": [
-            -1.8134603732818988,
+            1.4972960802344915,
             4.440892098500626e-16,
-            -1.8359185040026489
-          ],
-          "scale": [
-            1.5844190403328435,
-            1.5844190403328435,
-            1.5844190403328435
-          ],
-          "rotation": [
-            0,
-            0,
-            0,
-            "XYZ"
-          ],
-          "type": "asset_mesh",
-          "materialAssignments": [],
-          "collisionDetection": true,
-          "physics": {
-            "type": 2,
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "mass": 1
-          }
-        },
-        {
-          "id": "410b0f80-863c-4c04-9c58-f2e9c201fcbc",
-          "name": "tree-autumn-trunk",
-          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
-          "position": [
-            -0.4364798532344025,
-            4.440892098500626e-16,
-            2.3519328725014645
-          ],
-          "scale": [
-            1.5844190403328435,
-            1.5844190403328435,
-            1.5844190403328435
-          ],
-          "rotation": [
-            0,
-            0,
-            0,
-            "XYZ"
-          ],
-          "type": "asset_mesh",
-          "materialAssignments": [],
-          "collisionDetection": true,
-          "physics": {
-            "type": 2,
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "mass": 1
-          }
-        },
-        {
-          "id": "c6a92552-5e4d-40cc-8f98-7f49be0eea54",
-          "name": "tree-autumn-trunk",
-          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
-          "position": [
-            -1.3978749310313816,
-            4.440892098500626e-16,
-            1.6509651328514394
-          ],
-          "scale": [
-            1.5844190403328435,
-            1.5844190403328435,
-            1.5844190403328435
-          ],
-          "rotation": [
-            0,
-            0,
-            0,
-            "XYZ"
-          ],
-          "type": "asset_mesh",
-          "materialAssignments": [],
-          "collisionDetection": true,
-          "physics": {
-            "type": 2,
-            "friction": 0.5,
-            "density": 1,
-            "restitution": 0.5,
-            "mass": 1
-          }
-        },
-        {
-          "id": "5c0ab562-cdfc-41e9-bc98-58746a756bba",
-          "name": "tree-autumn-trunk",
-          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
-          "position": [
-            -2.067538573964356,
-            1.3322676295501878e-15,
-            0.8535205141297126
+            -1.0826386796717316
           ],
           "scale": [
             1.5844190403328435,
@@ -3976,13 +3821,75 @@
           }
         },
         {
-          "id": "da8d7147-60af-45f7-9b33-18ecdc98c979",
+          "id": "c6a92552-5e4d-40cc-8f98-7f49be0eea54",
           "name": "tree-autumn-trunk",
           "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
           "position": [
-            1.4972960802344915,
+            -1.3978749310313816,
             4.440892098500626e-16,
-            -1.0826386796717316
+            1.6509651328514394
+          ],
+          "scale": [
+            1.5844190403328435,
+            1.5844190403328435,
+            1.5844190403328435
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "asset_mesh",
+          "materialAssignments": [],
+          "collisionDetection": true,
+          "physics": {
+            "type": 2,
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "mass": 1
+          }
+        },
+        {
+          "id": "b2e55086-6bdb-4fcf-8909-d2d16cc44b62",
+          "name": "tree-autumn-trunk",
+          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
+          "position": [
+            0.7454198114217974,
+            0,
+            1.3350346039433134
+          ],
+          "scale": [
+            1.5844190403328435,
+            1.5844190403328435,
+            1.5844190403328435
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "asset_mesh",
+          "materialAssignments": [],
+          "collisionDetection": true,
+          "physics": {
+            "type": 2,
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "mass": 1
+          }
+        },
+        {
+          "id": "8c11cf63-8af5-4849-a687-4f5d4452da1e",
+          "name": "tree-autumn-trunk",
+          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
+          "position": [
+            -1.8134603732818988,
+            4.440892098500626e-16,
+            -1.8359185040026489
           ],
           "scale": [
             1.5844190403328435,
@@ -4066,6 +3973,248 @@
             "density": 1,
             "restitution": 0.5,
             "mass": 1
+          }
+        },
+        {
+          "id": "5c0ab562-cdfc-41e9-bc98-58746a756bba",
+          "name": "tree-autumn-trunk",
+          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
+          "position": [
+            -2.067538573964356,
+            1.3322676295501878e-15,
+            0.8535205141297126
+          ],
+          "scale": [
+            1.5844190403328435,
+            1.5844190403328435,
+            1.5844190403328435
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "asset_mesh",
+          "materialAssignments": [],
+          "collisionDetection": true,
+          "physics": {
+            "type": 2,
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "mass": 1
+          }
+        },
+        {
+          "id": "4cf723ac-5b29-4c5f-80b8-67acbc350ed3",
+          "name": "tree-autumn-trunk",
+          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
+          "position": [
+            -0.14682460395523833,
+            1.3322676295501878e-15,
+            -0.5403144608689558
+          ],
+          "scale": [
+            1.5844190403328435,
+            1.5844190403328435,
+            1.5844190403328435
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "asset_mesh",
+          "materialAssignments": [],
+          "collisionDetection": true,
+          "physics": {
+            "type": 2,
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "mass": 1
+          }
+        },
+        {
+          "id": "410b0f80-863c-4c04-9c58-f2e9c201fcbc",
+          "name": "tree-autumn-trunk",
+          "assetId": "9c900355-ebfc-4a38-b735-823f0bb2e06f",
+          "position": [
+            -0.4364798532344025,
+            4.440892098500626e-16,
+            2.3519328725014645
+          ],
+          "scale": [
+            1.5844190403328435,
+            1.5844190403328435,
+            1.5844190403328435
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "asset_mesh",
+          "materialAssignments": [],
+          "collisionDetection": true,
+          "physics": {
+            "type": 2,
+            "friction": 0.5,
+            "density": 1,
+            "restitution": 0.5,
+            "mass": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "8728cc4a-83fa-4854-87e9-17487dcbec7b",
+      "name": "Tutorial",
+      "type": "group",
+      "collisionDetection": false,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "position": [
+        -97.15880391327642,
+        -8.881784197001252e-16,
+        -234.27493943887566
+      ],
+      "children": [
+        {
+          "id": "f967903f-4eb1-4e77-b412-a0b5cf2e4466",
+          "name": "TutorialStep_Collect",
+          "position": [
+            -1.4350085764016427,
+            0.7475215504712158,
+            -2.4202845354551528
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "actor",
+          "actor": {
+            "type": "TutorialStep",
+            "innerParams": [
+              {
+                "path": [
+                  "volume"
+                ],
+                "params": {}
+              },
+              {
+                "path": [
+                  "volume",
+                  "editorMesh"
+                ],
+                "params": {
+                  "color": {
+                    "type": 10,
+                    "value": "#ffffff"
+                  }
+                }
+              }
+            ],
+            "params": {}
+          }
+        },
+        {
+          "id": "eb59a898-9a27-419a-8a5d-395d22889f50",
+          "name": "TutorialStep_Build",
+          "position": [
+            -1.1435042186715805,
+            0.7615892258287817,
+            1.5106309800887345
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "actor",
+          "actor": {
+            "type": "TutorialStep",
+            "innerParams": [
+              {
+                "path": [
+                  "volume"
+                ],
+                "params": {}
+              },
+              {
+                "path": [
+                  "volume",
+                  "editorMesh"
+                ],
+                "params": {
+                  "color": {
+                    "type": 10,
+                    "value": "#ffffff"
+                  }
+                }
+              }
+            ],
+            "params": {}
+          }
+        },
+        {
+          "id": "ec864cb3-5599-4f45-9b58-675a5decc41f",
+          "name": "TutorialManager",
+          "position": [
+            2.5785127950732374,
+            0,
+            0.9096535553664467
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "type": "actor",
+          "actor": {
+            "type": "TutorialManager",
+            "innerParams": [],
+            "params": {
+              "collectStep": {
+                "type": 13,
+                "value": "f967903f-4eb1-4e77-b412-a0b5cf2e4466"
+              },
+              "buildStep": {
+                "type": 13,
+                "value": "eb59a898-9a27-419a-8a5d-395d22889f50"
+              }
+            }
           }
         }
       ]

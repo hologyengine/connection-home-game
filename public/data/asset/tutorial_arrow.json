@@ -1,0 +1,19 @@
+{
+  "name": "tutorial_arrow",
+  "type": "mesh",
+  "collisionDetection": false,
+  "id": "a00a9632-154a-4216-b3eb-1ac37781e671",
+  "fileKey": "tutorial_arrow.glb",
+  "fileFormat": "glb",
+  "sourceFile": "C:\\Users\\adamr\\Documents\\code\\connection-home\\art\\tutorial_arrow.glb",
+  "mesh": {
+    "collisions": {}
+  },
+  "materialAssignments": [
+    {
+      "color": "#ffffff",
+      "materialId": "a00a96bb-db5e-4200-abb6-907fce023f15",
+      "name": ""
+    }
+  ]
+}

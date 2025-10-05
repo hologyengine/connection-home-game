@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
     },
     esbuild: {
       target: "es2020",
-      drop: ['console', 'debugger'],
+      drop: mode !== 'development' ? ['console', 'debugger'] : [],
   },
     plugins: [
       hologyBuild(),

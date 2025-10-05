@@ -6,6 +6,7 @@ import PlayerController from './player-controller.js';
 import { signal } from '@preact/signals-react';
 import { FloorActor } from './build.js';
 import { Vector3 } from 'three';
+import TutorialManager from '../actors/tutorial-manager.js';
 
 let pokiFinishedLoadingEvent = false
 
@@ -37,6 +38,7 @@ class Game extends GameInstance {
     this.player.value = character
     let finished = false
 
+    this.world.findActorByType(TutorialManager)?.start(character)
 
     this.viewController.onLateUpdate().subscribe(deltaTime => {
       // Delta time could be used to move softly
