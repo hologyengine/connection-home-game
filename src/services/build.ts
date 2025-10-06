@@ -2,6 +2,7 @@ import { BoxCollisionShape } from "@hology/core";
 import { Actor, AssetLoader, BaseActor, PhysicsBodyType, PhysicsSystem, RayTestResult, Service, World, inject } from "@hology/core/gameplay";
 import { Material, Mesh, MeshLambertMaterial, Object3D, Vector3 } from "three";
 import Character from "../actors/character";
+import { signal } from "@preact/signals-react";
 
 
 const damagedMaterial = new MeshLambertMaterial({color: '#301f0e'})
@@ -20,6 +21,7 @@ class FloorActor extends BaseActor {
   // Some randomness
   private health = 10 + 50 * Math.random()
   private isDisposed = false
+  public placeholder = false 
 
   async onInit(): Promise<void> {
     this.disposed.subscribe(() => this.isDisposed = true)
@@ -62,6 +64,9 @@ class FloorActor extends BaseActor {
       // This should not happen but it happens a lot 
       return
     }
+    if (this.placeholder) {
+      return
+    }
     this.health -= deltaTime
     if (this.health <= 5 && !this.appliedMaterial) {
       this.applyMaterial(damagedMaterial)
@@ -86,6 +91,8 @@ class FloorActor extends BaseActor {
 class BuildService {
   private world = inject(World)
   private physics = inject(PhysicsSystem)
+  private assetLoader = inject(AssetLoader)
+  public canBuild = signal(false)
 
   public player!: Character
 
@@ -100,9 +107,14 @@ class BuildService {
 
       if (this.isBuilding) {
         this.tryBuild()
+      } else {
+        // Show placeholder
+        this.showPlaceHolder()
       }
 
     }) 
+
+    this.createPlaceHolder()
   }
 
   private usedLocations: Vector3[] = []
@@ -151,6 +163,45 @@ class BuildService {
     
 
     this.player.wood.value--
+  }
+
+  showPlaceHolder() {
+    this.canBuild.value = false
+    if (this.placeHolder == null) {
+      // In case it is not loaded yet. Really should avoid these being async
+      return
+    }
+    // Hide in case we can't show it 
+    this.placeHolder.object.visible = false
+    const buildLocation = this.getBuildLocation(this.player)
+    if (this.usedLocations.some(l => l.equals(buildLocation))) {
+      return
+    }
+    if (this.player.wood.value <= 0) {
+      return
+    }    
+    this.physics.rayTest(new Vector3().copy(buildLocation).addScaledVector(up, 2), buildLocation, _rayTestResult)
+    if (_rayTestResult.hasHit) {
+      return
+    }
+    this.placeHolder.object.visible = true
+    this.placeHolder.position.copy(buildLocation)
+    this.canBuild.value = true
+  }
+
+  private placeHolder?: FloorActor
+  private  async createPlaceHolder() {
+    const material = await this.assetLoader.getMaterialByAssetId('a00c81c1-5b28-469a-894c-a0b339051d7d')
+    const floor = await this.world.spawnActor(FloorActor)
+    floor.placeholder = true
+    this.placeHolder = floor
+    floor.object.traverse(o => {
+      if (o instanceof Mesh) {
+        o.material = material
+        o.renderOrder = 999
+      }
+    })
+    this.placeHolder.object.visible = false
   }
 
   getBuildLocation(builder: BaseActor) {

@@ -10,6 +10,7 @@ import { ViewController } from '@hology/core/gameplay';
 import InputPrompt from './components/InputPrompt';
 import { activatePointerLock } from './utils/pointer-lock';
 import TutorialManager, { TutorialStepType } from './actors/tutorial-manager';
+import { BuildService } from './services/build';
 
 
 type Lang = 'en' | 'zh' | 'ko' | 'ja'
@@ -192,6 +193,24 @@ function StartHint() {
   </div>
 }
 
+function BuildPopup() {
+  const build = useService(BuildService)
+  const visible = build.canBuild.value
+
+  if (!visible) return false
+
+  return <div style={{
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(120px, -50%)',
+    zIndex: 5,
+    pointerEvents: 'none'
+  }}>
+    <img className="key-hint" src={new URL('./assets/input/keyboard/keyboard_q.svg', import.meta.url).toString()} alt="Q" />
+  </div>
+}
+
 function BuildHint() {
   const [visible, setVisible] = useState(false)
   const [tutorialManager] = useActorQuery({type: TutorialManager})
@@ -353,6 +372,7 @@ function App() {
       >
         <ResourceDisplay />
         <StartHint />
+        <BuildPopup />
         <BuildHint />
         <GameOverOverlay onRestart={handleRestart}></GameOverOverlay>
         <WonOverlay />
