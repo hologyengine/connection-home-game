@@ -53,6 +53,7 @@ class PlayerController {
       new Wheelbind(0.0003, false)
     )
     this.inputService.setKeybind(InputAction.build, new Keybind('q'))
+    this.inputService.setKeybind(InputAction.build, new Keybind('MouseLeft'))
   }
 
   public stop() {
